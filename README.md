@@ -3,7 +3,7 @@
 Detta är en inofficiell app för att hämta ditt snabbsaldo från ett förvalt Swedbank/Sparbanken konto.
 Appen använder "Swedbank's Mobile Apps API" som är samma API som de svenska Swedbank/Sparbanken apparna använder.
 
-Appen är endast tillgänglig på iOS och finns att laddar ner via som IPA fil via detta repo.
+Appen är endast tillgänglig på iOS och finns att laddar ner som IPA fil via detta repo.
 
 ## Screenshshots
 
