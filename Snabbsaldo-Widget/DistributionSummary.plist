@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Swedbank Widget.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>bitcode</key>
+			<true/>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>7273E26BA2DA1E08C998C62ED63034543A6EB090</string>
+				<key>dateExpires</key>
+				<string>2021-01-05</string>
+				<key>type</key>
+				<string>Apple Distribution</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>bitcode</key>
+					<true/>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>7273E26BA2DA1E08C998C62ED63034543A6EB090</string>
+						<key>dateExpires</key>
+						<string>2021-01-05</string>
+						<key>type</key>
+						<string>Apple Distribution</string>
+					</dict>
+					<key>entitlements</key>
+					<dict>
+						<key>application-identifier</key>
+						<string>NNPX5ZKT2A.com.samuelivarsson.Swedbank-Widget.extension</string>
+						<key>beta-reports-active</key>
+						<true/>
+						<key>com.apple.developer.team-identifier</key>
+						<string>NNPX5ZKT2A</string>
+						<key>com.apple.security.application-groups</key>
+						<array>
+							<string>group.com.samuelivarsson.Swedbank-Widget</string>
+						</array>
+						<key>get-task-allow</key>
+						<false/>
+					</dict>
+					<key>name</key>
+					<string>extension.appex</string>
+					<key>profile</key>
+					<dict>
+						<key>UUID</key>
+						<string>8dc60ffe-4316-47e9-8adc-d04d33e7aafe</string>
+						<key>name</key>
+						<string>iOS Team Store Provisioning Profile: com.samuelivarsson.Swedbank-Widget.extension</string>
+					</dict>
+					<key>symbols</key>
+					<true/>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>NNPX5ZKT2A</string>
+						<key>name</key>
+						<string>Samuel Ivarsson</string>
+					</dict>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>NNPX5ZKT2A.com.samuelivarsson.Swedbank-Widget</string>
+				<key>beta-reports-active</key>
+				<true/>
+				<key>com.apple.developer.team-identifier</key>
+				<string>NNPX5ZKT2A</string>
+				<key>com.apple.security.application-groups</key>
+				<array>
+					<string>group.com.samuelivarsson.Swedbank-Widget</string>
+				</array>
+				<key>get-task-allow</key>
+				<false/>
+			</dict>
+			<key>name</key>
+			<string>Snabbsaldo.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>30c513f1-520e-46d4-b549-f168aaa3e732</string>
+				<key>name</key>
+				<string>iOS Team Store Provisioning Profile: com.samuelivarsson.Swedbank-Widget</string>
+			</dict>
+			<key>symbols</key>
+			<true/>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>NNPX5ZKT2A</string>
+				<key>name</key>
+				<string>Samuel Ivarsson</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

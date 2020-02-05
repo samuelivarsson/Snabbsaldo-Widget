@@ -490,12 +490,13 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         let stringTop = "Begäran lyckades"
         let stringBottom = "Koden tillämpades"
         
+        self.showStartupScreen()
+        
         if self._subID != "ExampleXX2GCi3333YpupYBDZX75sOme8Ht9dtuFAKE=" {
             main.terminate { dictionary, response in
                 let (responseOK, _) = self.responseCheck(errorString: "logout",
                                                                 responseString: "Couldn't logout, but the code was set",
                                                                 response: response, dictionary: dictionary)
-                self.showStartupScreen()
                 
                 if (responseOK) {
                     DispatchQueue.main.async {
@@ -504,7 +505,6 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
                 }
             }
         } else {
-            self.showStartupScreen()
             self.showUserError(stringTop: stringTop, stringBottom: stringBottom)
         }
         

@@ -1,0 +1,237 @@
+2020-02-05 11:18:05 +0000  Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0x7ff9b3c5d6d0; archive(resolved)='<IDEArchive: 0x7ff9ab5b8800>', distributionTask(resolved)='2', distributionDestination(resolved)='1', distributionMethod(resolved)='<IDEDistributionMethodiOSAppStoreDistribution: 0x7ff9ab1da080>', team(resolved)='<IDEProvisioningDisambiguatableBasicTeam: 0x7ff9b4845530; teamID='NNPX5ZKT2A', teamName='Samuel Ivarsson', teamType='Individual', username='samuelivarsson3@gmail.com', isFreeProvisioningTeam='0'>'>
+	Chain (12, self inclusive):
+	<IDEDistributionProcessingPipelineContext: 0x7ff9b3c5d6d0; archive = '<IDEArchive: 0x7ff9ab5b8800>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7ff9ab1da080>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7ff9b4845530; teamID='NNPX5ZKT2A', teamName='Samuel Ivarsson', teamType='Individual', username='samuelivarsson3@gmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionProcessingPipelineContext: 0x7ff9b3d81370; archive = '<IDEArchive: 0x7ff9ab5b8800>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7ff9ab1da080>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7ff9b4845530; teamID='NNPX5ZKT2A', teamName='Samuel Ivarsson', teamType='Individual', username='samuelivarsson3@gmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7ff9aa3d69b0; archive = '<IDEArchive: 0x7ff9ab5b8800>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7ff9ab1da080>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7ff9b4845530; teamID='NNPX5ZKT2A', teamName='Samuel Ivarsson', teamType='Individual', username='samuelivarsson3@gmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7ff9b384d480; archive = '<IDEArchive: 0x7ff9ab5b8800>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7ff9ab1da080>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7ff9b4845530; teamID='NNPX5ZKT2A', teamName='Samuel Ivarsson', teamType='Individual', username='samuelivarsson3@gmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7ff9aa382f70; archive = '<IDEArchive: 0x7ff9ab5b8800>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7ff9ab1da080>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7ff9b4845530; teamID='NNPX5ZKT2A', teamName='Samuel Ivarsson', teamType='Individual', username='samuelivarsson3@gmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7ff9b38a3410; archive = '<IDEArchive: 0x7ff9ab5b8800>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7ff9ab1da080>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7ff9b4845530; teamID='NNPX5ZKT2A', teamName='Samuel Ivarsson', teamType='Individual', username='samuelivarsson3@gmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7ff9b1d89910; archive = '<IDEArchive: 0x7ff9ab5b8800>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7ff9ab1da080>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7ff9b4845530; teamID='NNPX5ZKT2A', teamName='Samuel Ivarsson', teamType='Individual', username='samuelivarsson3@gmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7ff9ab527c90; archive = '<IDEArchive: 0x7ff9ab5b8800>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7ff9ab1da080>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7ff9b4845530; teamID='NNPX5ZKT2A', teamName='Samuel Ivarsson', teamType='Individual', username='samuelivarsson3@gmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7ff9b48d5d30; archive = '<IDEArchive: 0x7ff9ab5b8800>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7ff9ab1da080>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7ff9b4845530; teamID='NNPX5ZKT2A', teamName='Samuel Ivarsson', teamType='Individual', username='samuelivarsson3@gmail.com', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7ff9abc48ef0; archive = '<IDEArchive: 0x7ff9ab5b8800>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7ff9ab1da080>', team='(null)'>
+	<IDEDistributionContext: 0x7ff995473190; archive = '<IDEArchive: 0x7ff9ab5b8800>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7ff9ab1da080>', team='(null)'>
+	<IDEDistributionContext: 0x7ff9960dfaa0; archive = '<IDEArchive: 0x7ff9ab5b8800>', distributionMethod='(null)', team='(null)'>
+</IDEDistributionProcessingPipelineContext: 0x7ff9b3c5d6d0>
+2020-02-05 11:18:05 +0000  Processing step: IDEDistributionCreateDestRootStep
+2020-02-05 11:18:05 +0000  Processing step: IDEDistributionCopyItemStep
+2020-02-05 11:18:05 +0000  Running /usr/bin/ditto '-V' '/Users/samuelivarsson/Library/Developer/Xcode/Archives/2020-02-05/Swedbank Widget 2020-02-05, 11.28.xcarchive/Products/Applications/Snabbsaldo.app' '/var/folders/11/ry7rcp8x1_78xr46cq7lv62h0000gn/T/XcodeDistPipeline.~~~xB39CA/Root/Payload/Snabbsaldo.app'
+2020-02-05 11:18:05 +0000  >>> Copying /Users/samuelivarsson/Library/Developer/Xcode/Archives/2020-02-05/Swedbank Widget 2020-02-05, 11.28.xcarchive/Products/Applications/Snabbsaldo.app 
+2020-02-05 11:18:05 +0000  copying file ./_CodeSignature/CodeResources ... 
+2020-02-05 11:18:05 +0000  7238 bytes for ./_CodeSignature/CodeResources
+2020-02-05 11:18:05 +0000  copying file ./PlugIns/extension.appex/_CodeSignature/CodeResources ... 
+2020-02-05 11:18:05 +0000  2962 bytes for ./PlugIns/extension.appex/_CodeSignature/CodeResources
+2020-02-05 11:18:05 +0000  copying file ./PlugIns/extension.appex/extension ... 
+2020-02-05 11:18:05 +0000  480096 bytes for ./PlugIns/extension.appex/extension
+2020-02-05 11:18:05 +0000  copying file ./PlugIns/extension.appex/Base.lproj/MainInterface.storyboardc/UIViewController-M4Y-Lb-cyx.nib ... 
+2020-02-05 11:18:05 +0000  1016 bytes for ./PlugIns/extension.appex/Base.lproj/MainInterface.storyboardc/UIViewController-M4Y-Lb-cyx.nib
+2020-02-05 11:18:05 +0000  copying file ./PlugIns/extension.appex/Base.lproj/MainInterface.storyboardc/M4Y-Lb-cyx-view-S3S-Oj-5AN.nib ... 
+2020-02-05 11:18:05 +0000  7777 bytes for ./PlugIns/extension.appex/Base.lproj/MainInterface.storyboardc/M4Y-Lb-cyx-view-S3S-Oj-5AN.nib
+2020-02-05 11:18:05 +0000  copying file ./PlugIns/extension.appex/Base.lproj/MainInterface.storyboardc/Info.plist ... 
+2020-02-05 11:18:05 +0000  258 bytes for ./PlugIns/extension.appex/Base.lproj/MainInterface.storyboardc/Info.plist
+2020-02-05 11:18:05 +0000  copying file ./PlugIns/extension.appex/embedded.mobileprovision ... 
+2020-02-05 11:18:05 +0000  7762 bytes for ./PlugIns/extension.appex/embedded.mobileprovision
+2020-02-05 11:18:05 +0000  copying file ./PlugIns/extension.appex/Info.plist ... 
+2020-02-05 11:18:05 +0000  939 bytes for ./PlugIns/extension.appex/Info.plist
+2020-02-05 11:18:05 +0000  copying file ./AppIcon60x60@2x.png ... 
+2020-02-05 11:18:05 +0000  7009 bytes for ./AppIcon60x60@2x.png
+2020-02-05 11:18:05 +0000  copying file ./Snabbsaldo ... 
+2020-02-05 11:18:05 +0000  855520 bytes for ./Snabbsaldo
+2020-02-05 11:18:05 +0000  copying file ./Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib ... 
+2020-02-05 11:18:05 +0000  982 bytes for ./Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib
+2020-02-05 11:18:05 +0000  copying file ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib ... 
+2020-02-05 11:18:05 +0000  35868 bytes for ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib
+2020-02-05 11:18:05 +0000  copying file ./Base.lproj/Main.storyboardc/Info.plist ... 
+2020-02-05 11:18:05 +0000  258 bytes for ./Base.lproj/Main.storyboardc/Info.plist
+2020-02-05 11:18:05 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib ... 
+2020-02-05 11:18:05 +0000  1197 bytes for ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib
+2020-02-05 11:18:05 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib ... 
+2020-02-05 11:18:05 +0000  896 bytes for ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib
+2020-02-05 11:18:05 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/Info.plist ... 
+2020-02-05 11:18:05 +0000  258 bytes for ./Base.lproj/LaunchScreen.storyboardc/Info.plist
+2020-02-05 11:18:05 +0000  copying file ./Assets.car ... 
+2020-02-05 11:18:05 +0000  869135 bytes for ./Assets.car
+2020-02-05 11:18:05 +0000  copying file ./AppIcon76x76@2x~ipad.png ... 
+2020-02-05 11:18:05 +0000  9802 bytes for ./AppIcon76x76@2x~ipad.png
+2020-02-05 11:18:05 +0000  copying file ./LICENSE.txt ... 
+2020-02-05 11:18:05 +0000  1082 bytes for ./LICENSE.txt
+2020-02-05 11:18:05 +0000  copying file ./embedded.mobileprovision ... 
+2020-02-05 11:18:05 +0000  7732 bytes for ./embedded.mobileprovision
+2020-02-05 11:18:05 +0000  copying file ./Info.plist ... 
+2020-02-05 11:18:05 +0000  1805 bytes for ./Info.plist
+2020-02-05 11:18:05 +0000  copying file ./PkgInfo ... 
+2020-02-05 11:18:05 +0000  8 bytes for ./PkgInfo
+2020-02-05 11:18:05 +0000  /usr/bin/ditto exited with 0
+2020-02-05 11:18:05 +0000  Processing step: IDEDistributionEmbedProfileStep
+2020-02-05 11:18:05 +0000  Processing step: IDEDistributionItemRemovalStep
+2020-02-05 11:18:05 +0000  Processing step: IDEDistributionAppThinningPlistStep
+2020-02-05 11:18:05 +0000  Skipping step: IDEDistributionAppThinningPlistStep because it said so
+2020-02-05 11:18:05 +0000  Processing step: IDEDistributionCompileBitcodeStep
+2020-02-05 11:18:05 +0000  Skipping step: IDEDistributionCompileBitcodeStep because it said so
+2020-02-05 11:18:05 +0000  Processing step: IDEDistributionCodeSlimmingStep
+2020-02-05 11:18:05 +0000  Processing step: IDEDistributionCopyBCSymbolMapsStep
+2020-02-05 11:18:05 +0000  Running /usr/bin/ditto '-V' '/Users/samuelivarsson/Library/Developer/Xcode/Archives/2020-02-05/Swedbank Widget 2020-02-05, 11.28.xcarchive/BCSymbolMaps/8D419591-1E09-34D7-84C5-799BE098242C.bcsymbolmap' '/var/folders/11/ry7rcp8x1_78xr46cq7lv62h0000gn/T/XcodeDistPipeline.~~~xB39CA/Root/BCSymbolMaps/8D419591-1E09-34D7-84C5-799BE098242C.bcsymbolmap'
+2020-02-05 11:18:05 +0000  >>> Copying /Users/samuelivarsson/Library/Developer/Xcode/Archives/2020-02-05/Swedbank Widget 2020-02-05, 11.28.xcarchive/BCSymbolMaps/8D419591-1E09-34D7-84C5-799BE098242C.bcsymbolmap 
+2020-02-05 11:18:05 +0000  copying file ./8D419591-1E09-34D7-84C5-799BE098242C.bcsymbolmap ... 
+2020-02-05 11:18:05 +0000  51177 bytes for ./8D419591-1E09-34D7-84C5-799BE098242C.bcsymbolmap
+2020-02-05 11:18:05 +0000  /usr/bin/ditto exited with 0
+2020-02-05 11:18:05 +0000  Running /usr/bin/ditto '-V' '/Users/samuelivarsson/Library/Developer/Xcode/Archives/2020-02-05/Swedbank Widget 2020-02-05, 11.28.xcarchive/BCSymbolMaps/B0D130EA-7ABA-37AC-AE63-7DFE146BDDE4.bcsymbolmap' '/var/folders/11/ry7rcp8x1_78xr46cq7lv62h0000gn/T/XcodeDistPipeline.~~~xB39CA/Root/BCSymbolMaps/B0D130EA-7ABA-37AC-AE63-7DFE146BDDE4.bcsymbolmap'
+2020-02-05 11:18:05 +0000  >>> Copying /Users/samuelivarsson/Library/Developer/Xcode/Archives/2020-02-05/Swedbank Widget 2020-02-05, 11.28.xcarchive/BCSymbolMaps/B0D130EA-7ABA-37AC-AE63-7DFE146BDDE4.bcsymbolmap 
+2020-02-05 11:18:05 +0000  copying file ./B0D130EA-7ABA-37AC-AE63-7DFE146BDDE4.bcsymbolmap ... 
+2020-02-05 11:18:05 +0000  103568 bytes for ./B0D130EA-7ABA-37AC-AE63-7DFE146BDDE4.bcsymbolmap
+2020-02-05 11:18:05 +0000  /usr/bin/ditto exited with 0
+2020-02-05 11:18:05 +0000  Processing step: IDEDistributionSymbolsStep
+2020-02-05 11:18:05 +0000  Excluding symbols for extension.appex
+2020-02-05 11:18:05 +0000  Excluding symbols for Snabbsaldo.app
+2020-02-05 11:18:05 +0000  Processing step: IDEDistributionCopyAppleProvidedContentStep
+2020-02-05 11:18:05 +0000  Processing step: IDEDistributionAppThinningStep
+2020-02-05 11:18:05 +0000  Skipping step: IDEDistributionAppThinningStep because it said so
+2020-02-05 11:18:05 +0000  Processing step: IDEDistributionArchThinningStep
+2020-02-05 11:18:05 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/11/ry7rcp8x1_78xr46cq7lv62h0000gn/T/XcodeDistPipeline.~~~xB39CA/Root/Payload/Snabbsaldo.app/PlugIns/extension.appex/extension' '-verify_arch' 'arm64e'
+2020-02-05 11:18:05 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2020-02-05 11:18:05 +0000  Skipping architecture thinning for item "extension" because arch "arm64e" wasn't found
+2020-02-05 11:18:05 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/11/ry7rcp8x1_78xr46cq7lv62h0000gn/T/XcodeDistPipeline.~~~xB39CA/Root/Payload/Snabbsaldo.app/Snabbsaldo' '-verify_arch' 'arm64e'
+2020-02-05 11:18:05 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2020-02-05 11:18:05 +0000  Skipping architecture thinning for item "Snabbsaldo" because arch "arm64e" wasn't found
+2020-02-05 11:18:05 +0000  Processing step: IDEDistributionODRStep
+2020-02-05 11:18:05 +0000  Processing step: IDEDistributionStripXattrsStep
+2020-02-05 11:18:05 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ff9954c1dd0; bundleID='com.samuelivarsson.Swedbank-Widget.extension', path='<DVTFilePath:0x7ff9b0a32c00:'/Users/samuelivarsson/Library/Developer/Xcode/Archives/2020-02-05/Swedbank Widget 2020-02-05, 11.28.xcarchive/Products/Applications/Snabbsaldo.app/PlugIns/extension.appex'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff9b3c98d90; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff9b48d57e0; name='Apple Development: samuelvalfridivarsson@gmail.com (KQXBHL6G2N)', hash='A04DAC1B6F7F8B5E05B09B61F81352D0B41D31AF', serialNumber='3C4AADE851C9E89E', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2019-12-31 00:38:24 +0000''>', entitlements='{
+    "application-identifier" = "NNPX5ZKT2A.com.samuelivarsson.Swedbank-Widget.extension";
+    "com.apple.developer.team-identifier" = NNPX5ZKT2A;
+    "com.apple.security.application-groups" =     (
+        "group.com.samuelivarsson.Swedbank-Widget"
+    );
+    "get-task-allow" = 1;
+}', teamID='NNPX5ZKT2A', identifier='com.samuelivarsson.Swedbank-Widget.extension', executablePath='<DVTFilePath:0x7ff9b0a40e90:'/Users/samuelivarsson/Library/Developer/Xcode/Archives/2020-02-05/Swedbank Widget 2020-02-05, 11.28.xcarchive/Products/Applications/Snabbsaldo.app/PlugIns/extension.appex/extension'>', hardenedRuntime='0'>'>
+2020-02-05 11:18:05 +0000  Running /usr/bin/xattr '-crs' '/var/folders/11/ry7rcp8x1_78xr46cq7lv62h0000gn/T/XcodeDistPipeline.~~~xB39CA/Root/Payload/Snabbsaldo.app'
+2020-02-05 11:18:06 +0000  /usr/bin/xattr exited with 0
+2020-02-05 11:18:06 +0000  Processing step: IDEDistributionCodesignStep
+2020-02-05 11:18:06 +0000  Entitlements for <IDEDistributionItem: 0x7ff9954c1dd0; bundleID='com.samuelivarsson.Swedbank-Widget.extension', path='<DVTFilePath:0x7ff9b0a32c00:'/Users/samuelivarsson/Library/Developer/Xcode/Archives/2020-02-05/Swedbank Widget 2020-02-05, 11.28.xcarchive/Products/Applications/Snabbsaldo.app/PlugIns/extension.appex'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff9b3c98d90; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff9b485e8d0; name='Apple Development: samuelvalfridivarsson@gmail.com (KQXBHL6G2N)', hash='A04DAC1B6F7F8B5E05B09B61F81352D0B41D31AF', serialNumber='3C4AADE851C9E89E', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2019-12-31 00:38:24 +0000''>', entitlements='{
+    "application-identifier" = "NNPX5ZKT2A.com.samuelivarsson.Swedbank-Widget.extension";
+    "com.apple.developer.team-identifier" = NNPX5ZKT2A;
+    "com.apple.security.application-groups" =     (
+        "group.com.samuelivarsson.Swedbank-Widget"
+    );
+    "get-task-allow" = 1;
+}', teamID='NNPX5ZKT2A', identifier='com.samuelivarsson.Swedbank-Widget.extension', executablePath='<DVTFilePath:0x7ff9b0a40e90:'/Users/samuelivarsson/Library/Developer/Xcode/Archives/2020-02-05/Swedbank Widget 2020-02-05, 11.28.xcarchive/Products/Applications/Snabbsaldo.app/PlugIns/extension.appex/extension'>', hardenedRuntime='0'>'>: {
+    "application-identifier" = "NNPX5ZKT2A.com.samuelivarsson.Swedbank-Widget.extension";
+    "beta-reports-active" = 1;
+    "com.apple.developer.team-identifier" = NNPX5ZKT2A;
+    "com.apple.security.application-groups" =     (
+        "group.com.samuelivarsson.Swedbank-Widget"
+    );
+    "get-task-allow" = 0;
+}
+2020-02-05 11:18:06 +0000  Writing entitlements for <IDEDistributionItem: 0x7ff9954c1dd0; bundleID='com.samuelivarsson.Swedbank-Widget.extension', path='<DVTFilePath:0x7ff9b0a32c00:'/Users/samuelivarsson/Library/Developer/Xcode/Archives/2020-02-05/Swedbank Widget 2020-02-05, 11.28.xcarchive/Products/Applications/Snabbsaldo.app/PlugIns/extension.appex'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff9b3c98d90; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff9b48d9440; name='Apple Development: samuelvalfridivarsson@gmail.com (KQXBHL6G2N)', hash='A04DAC1B6F7F8B5E05B09B61F81352D0B41D31AF', serialNumber='3C4AADE851C9E89E', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2019-12-31 00:38:24 +0000''>', entitlements='{
+    "application-identifier" = "NNPX5ZKT2A.com.samuelivarsson.Swedbank-Widget.extension";
+    "com.apple.developer.team-identifier" = NNPX5ZKT2A;
+    "com.apple.security.application-groups" =     (
+        "group.com.samuelivarsson.Swedbank-Widget"
+    );
+    "get-task-allow" = 1;
+}', teamID='NNPX5ZKT2A', identifier='com.samuelivarsson.Swedbank-Widget.extension', executablePath='<DVTFilePath:0x7ff9b0a40e90:'/Users/samuelivarsson/Library/Developer/Xcode/Archives/2020-02-05/Swedbank Widget 2020-02-05, 11.28.xcarchive/Products/Applications/Snabbsaldo.app/PlugIns/extension.appex/extension'>', hardenedRuntime='0'>'> to: /var/folders/11/ry7rcp8x1_78xr46cq7lv62h0000gn/T/XcodeDistPipeline.~~~xB39CA/entitlements~~~w94Anq
+2020-02-05 11:18:06 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '7273E26BA2DA1E08C998C62ED63034543A6EB090' '--entitlements' '/var/folders/11/ry7rcp8x1_78xr46cq7lv62h0000gn/T/XcodeDistPipeline.~~~xB39CA/entitlements~~~w94Anq' '--preserve-metadata=identifier,flags,runtime' '/var/folders/11/ry7rcp8x1_78xr46cq7lv62h0000gn/T/XcodeDistPipeline.~~~xB39CA/Root/Payload/Snabbsaldo.app/PlugIns/extension.appex'
+2020-02-05 11:18:06 +0000  /var/folders/11/ry7rcp8x1_78xr46cq7lv62h0000gn/T/XcodeDistPipeline.~~~xB39CA/Root/Payload/Snabbsaldo.app/PlugIns/extension.appex: signed bundle with Mach-O thin (arm64) [com.samuelivarsson.Swedbank-Widget.extension]
+2020-02-05 11:18:06 +0000  /usr/bin/codesign exited with 0
+2020-02-05 11:18:06 +0000  Entitlements for <IDEDistributionItem: 0x7ff9b48fbd70; bundleID='com.samuelivarsson.Swedbank-Widget', path='<DVTFilePath:0x7ff9aa6a6c50:'/Users/samuelivarsson/Library/Developer/Xcode/Archives/2020-02-05/Swedbank Widget 2020-02-05, 11.28.xcarchive/Products/Applications/Snabbsaldo.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff9aa32fa70; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff9aa3141c0; name='Apple Development: samuelvalfridivarsson@gmail.com (KQXBHL6G2N)', hash='A04DAC1B6F7F8B5E05B09B61F81352D0B41D31AF', serialNumber='3C4AADE851C9E89E', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2019-12-31 00:38:24 +0000''>', entitlements='{
+    "application-identifier" = "NNPX5ZKT2A.com.samuelivarsson.Swedbank-Widget";
+    "com.apple.developer.team-identifier" = NNPX5ZKT2A;
+    "com.apple.security.application-groups" =     (
+        "group.com.samuelivarsson.Swedbank-Widget"
+    );
+    "get-task-allow" = 1;
+}', teamID='NNPX5ZKT2A', identifier='com.samuelivarsson.Swedbank-Widget', executablePath='<DVTFilePath:0x7ff9aa39c660:'/Users/samuelivarsson/Library/Developer/Xcode/Archives/2020-02-05/Swedbank Widget 2020-02-05, 11.28.xcarchive/Products/Applications/Snabbsaldo.app/Snabbsaldo'>', hardenedRuntime='0'>'>: {
+    "application-identifier" = "NNPX5ZKT2A.com.samuelivarsson.Swedbank-Widget";
+    "beta-reports-active" = 1;
+    "com.apple.developer.team-identifier" = NNPX5ZKT2A;
+    "com.apple.security.application-groups" =     (
+        "group.com.samuelivarsson.Swedbank-Widget"
+    );
+    "get-task-allow" = 0;
+}
+2020-02-05 11:18:06 +0000  Writing entitlements for <IDEDistributionItem: 0x7ff9b48fbd70; bundleID='com.samuelivarsson.Swedbank-Widget', path='<DVTFilePath:0x7ff9aa6a6c50:'/Users/samuelivarsson/Library/Developer/Xcode/Archives/2020-02-05/Swedbank Widget 2020-02-05, 11.28.xcarchive/Products/Applications/Snabbsaldo.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7ff9aa32fa70; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7ff9b4838b20; name='Apple Development: samuelvalfridivarsson@gmail.com (KQXBHL6G2N)', hash='A04DAC1B6F7F8B5E05B09B61F81352D0B41D31AF', serialNumber='3C4AADE851C9E89E', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2019-12-31 00:38:24 +0000''>', entitlements='{
+    "application-identifier" = "NNPX5ZKT2A.com.samuelivarsson.Swedbank-Widget";
+    "com.apple.developer.team-identifier" = NNPX5ZKT2A;
+    "com.apple.security.application-groups" =     (
+        "group.com.samuelivarsson.Swedbank-Widget"
+    );
+    "get-task-allow" = 1;
+}', teamID='NNPX5ZKT2A', identifier='com.samuelivarsson.Swedbank-Widget', executablePath='<DVTFilePath:0x7ff9aa39c660:'/Users/samuelivarsson/Library/Developer/Xcode/Archives/2020-02-05/Swedbank Widget 2020-02-05, 11.28.xcarchive/Products/Applications/Snabbsaldo.app/Snabbsaldo'>', hardenedRuntime='0'>'> to: /var/folders/11/ry7rcp8x1_78xr46cq7lv62h0000gn/T/XcodeDistPipeline.~~~xB39CA/entitlements~~~4zvES5
+2020-02-05 11:18:06 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '7273E26BA2DA1E08C998C62ED63034543A6EB090' '--entitlements' '/var/folders/11/ry7rcp8x1_78xr46cq7lv62h0000gn/T/XcodeDistPipeline.~~~xB39CA/entitlements~~~4zvES5' '--preserve-metadata=identifier,flags,runtime' '/var/folders/11/ry7rcp8x1_78xr46cq7lv62h0000gn/T/XcodeDistPipeline.~~~xB39CA/Root/Payload/Snabbsaldo.app'
+2020-02-05 11:18:06 +0000  /var/folders/11/ry7rcp8x1_78xr46cq7lv62h0000gn/T/XcodeDistPipeline.~~~xB39CA/Root/Payload/Snabbsaldo.app: signed app bundle with Mach-O thin (arm64) [com.samuelivarsson.Swedbank-Widget]
+2020-02-05 11:18:06 +0000  /usr/bin/codesign exited with 0
+2020-02-05 11:18:06 +0000  Processing step: IDEDistributionZipODRItemStep
+2020-02-05 11:18:06 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2020-02-05 11:18:06 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2020-02-05 11:18:06 +0000  Processing step: IDEDistributionCreateIPAStep
+2020-02-05 11:18:06 +0000  Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/11/ry7rcp8x1_78xr46cq7lv62h0000gn/T/XcodeDistPipeline.~~~xB39CA/Root' '/var/folders/11/ry7rcp8x1_78xr46cq7lv62h0000gn/T/XcodeDistPipeline.~~~xB39CA/Packages/Swedbank Widget.ipa'
+2020-02-05 11:18:06 +0000  >>> Copying /var/folders/11/ry7rcp8x1_78xr46cq7lv62h0000gn/T/XcodeDistPipeline.~~~xB39CA/Root 
+2020-02-05 11:18:06 +0000  copying file ./BCSymbolMaps/8D419591-1E09-34D7-84C5-799BE098242C.bcsymbolmap ... 
+2020-02-05 11:18:06 +0000  51177 bytes for ./BCSymbolMaps/8D419591-1E09-34D7-84C5-799BE098242C.bcsymbolmap
+2020-02-05 11:18:06 +0000  copying file ./BCSymbolMaps/B0D130EA-7ABA-37AC-AE63-7DFE146BDDE4.bcsymbolmap ... 
+2020-02-05 11:18:06 +0000  103568 bytes for ./BCSymbolMaps/B0D130EA-7ABA-37AC-AE63-7DFE146BDDE4.bcsymbolmap
+2020-02-05 11:18:06 +0000  copying file ./Payload/Snabbsaldo.app/_CodeSignature/CodeResources ... 
+2020-02-05 11:18:06 +0000  7238 bytes for ./Payload/Snabbsaldo.app/_CodeSignature/CodeResources
+2020-02-05 11:18:06 +0000  copying file ./Payload/Snabbsaldo.app/PlugIns/extension.appex/_CodeSignature/CodeResources ... 
+2020-02-05 11:18:06 +0000  2962 bytes for ./Payload/Snabbsaldo.app/PlugIns/extension.appex/_CodeSignature/CodeResources
+2020-02-05 11:18:06 +0000  copying file ./Payload/Snabbsaldo.app/PlugIns/extension.appex/extension ... 
+2020-02-05 11:18:06 +0000  374336 bytes for ./Payload/Snabbsaldo.app/PlugIns/extension.appex/extension
+2020-02-05 11:18:06 +0000  copying file ./Payload/Snabbsaldo.app/PlugIns/extension.appex/Base.lproj/MainInterface.storyboardc/UIViewController-M4Y-Lb-cyx.nib ... 
+2020-02-05 11:18:06 +0000  1016 bytes for ./Payload/Snabbsaldo.app/PlugIns/extension.appex/Base.lproj/MainInterface.storyboardc/UIViewController-M4Y-Lb-cyx.nib
+copying file ./Payload/Snabbsaldo.app/PlugIns/extension.appex/Base.lproj/MainInterface.storyboardc/M4Y-Lb-cyx-view-S3S-Oj-5AN.nib ... 
+2020-02-05 11:18:06 +0000  7777 bytes for ./Payload/Snabbsaldo.app/PlugIns/extension.appex/Base.lproj/MainInterface.storyboardc/M4Y-Lb-cyx-view-S3S-Oj-5AN.nib
+2020-02-05 11:18:06 +0000  copying file ./Payload/Snabbsaldo.app/PlugIns/extension.appex/Base.lproj/MainInterface.storyboardc/Info.plist ... 
+258 bytes for ./Payload/Snabbsaldo.app/PlugIns/extension.appex/Base.lproj/MainInterface.storyboardc/Info.plist
+2020-02-05 11:18:06 +0000  copying file ./Payload/Snabbsaldo.app/PlugIns/extension.appex/embedded.mobileprovision ... 
+2020-02-05 11:18:06 +0000  7577 bytes for ./Payload/Snabbsaldo.app/PlugIns/extension.appex/embedded.mobileprovision
+copying file ./Payload/Snabbsaldo.app/PlugIns/extension.appex/Info.plist ... 
+2020-02-05 11:18:06 +0000  939 bytes for ./Payload/Snabbsaldo.app/PlugIns/extension.appex/Info.plist
+2020-02-05 11:18:06 +0000  copying file ./Payload/Snabbsaldo.app/AppIcon60x60@2x.png ... 
+2020-02-05 11:18:06 +0000  7009 bytes for ./Payload/Snabbsaldo.app/AppIcon60x60@2x.png
+2020-02-05 11:18:06 +0000  copying file ./Payload/Snabbsaldo.app/Snabbsaldo ... 
+2020-02-05 11:18:06 +0000  666864 bytes for ./Payload/Snabbsaldo.app/Snabbsaldo
+2020-02-05 11:18:06 +0000  copying file ./Payload/Snabbsaldo.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib ... 
+2020-02-05 11:18:06 +0000  982 bytes for ./Payload/Snabbsaldo.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib
+copying file ./Payload/Snabbsaldo.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib ... 
+2020-02-05 11:18:06 +0000  35868 bytes for ./Payload/Snabbsaldo.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib
+2020-02-05 11:18:06 +0000  copying file ./Payload/Snabbsaldo.app/Base.lproj/Main.storyboardc/Info.plist ... 
+258 bytes for ./Payload/Snabbsaldo.app/Base.lproj/Main.storyboardc/Info.plist
+2020-02-05 11:18:06 +0000  copying file ./Payload/Snabbsaldo.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib ... 
+2020-02-05 11:18:06 +0000  1197 bytes for ./Payload/Snabbsaldo.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib
+2020-02-05 11:18:06 +0000  copying file ./Payload/Snabbsaldo.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib ... 
+2020-02-05 11:18:06 +0000  896 bytes for ./Payload/Snabbsaldo.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib
+copying file ./Payload/Snabbsaldo.app/Base.lproj/LaunchScreen.storyboardc/Info.plist ... 
+2020-02-05 11:18:06 +0000  258 bytes for ./Payload/Snabbsaldo.app/Base.lproj/LaunchScreen.storyboardc/Info.plist
+2020-02-05 11:18:06 +0000  copying file ./Payload/Snabbsaldo.app/Assets.car ... 
+2020-02-05 11:18:06 +0000  869135 bytes for ./Payload/Snabbsaldo.app/Assets.car
+copying file ./Payload/Snabbsaldo.app/AppIcon76x76@2x~ipad.png ... 
+2020-02-05 11:18:06 +0000  9802 bytes for ./Payload/Snabbsaldo.app/AppIcon76x76@2x~ipad.png
+copying file ./Payload/Snabbsaldo.app/LICENSE.txt ... 
+2020-02-05 11:18:06 +0000  1082 bytes for ./Payload/Snabbsaldo.app/LICENSE.txt
+copying file ./Payload/Snabbsaldo.app/embedded.mobileprovision ... 
+2020-02-05 11:18:06 +0000  7547 bytes for ./Payload/Snabbsaldo.app/embedded.mobileprovision
+2020-02-05 11:18:06 +0000  copying file ./Payload/Snabbsaldo.app/Info.plist ... 
+2020-02-05 11:18:06 +0000  1805 bytes for ./Payload/Snabbsaldo.app/Info.plist
+copying file ./Payload/Snabbsaldo.app/PkgInfo ... 
+8 bytes for ./Payload/Snabbsaldo.app/PkgInfo
+2020-02-05 11:18:06 +0000  /usr/bin/ditto exited with 0
+2020-02-05 11:18:06 +0000  Processing step: IDEDistributionAppStoreInformationStep
+2020-02-05 11:18:06 +0000  Skipping step: IDEDistributionAppStoreInformationStep because it said so
+2020-02-05 11:18:06 +0000  Processing step: IDEDistributionGenerateProcessedDistributionItems
+2020-02-05 11:18:06 +0000  Processing step: IDEDistributionCreateManifestStep
+2020-02-05 11:18:06 +0000  Skipping step: IDEDistributionCreateManifestStep because it said so
