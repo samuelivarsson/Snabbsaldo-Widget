@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D62039623C2CE9500AC1384 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4D62039523C2CE9500AC1384 /* LICENSE.txt */; };
+		4D62039823C3848B00AC1384 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D62039723C3848B00AC1384 /* Requests.swift */; };
+		4D62039A23C384BB00AC1384 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D62039923C384BB00AC1384 /* Main.swift */; };
+		4D62039C23C384E000AC1384 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D62039B23C384E000AC1384 /* AppData.swift */; };
+		4D62039E23C3850600AC1384 /* UnAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D62039D23C3850600AC1384 /* UnAuth.swift */; };
+		4DA9976D23B6F5CF003E2602 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA9976C23B6F5CF003E2602 /* AppDelegate.swift */; };
+		4DA9976F23B6F5CF003E2602 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA9976E23B6F5CF003E2602 /* SceneDelegate.swift */; };
+		4DA9977123B6F5CF003E2602 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA9977023B6F5CF003E2602 /* ViewController.swift */; };
+		4DA9977423B6F5CF003E2602 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA9977223B6F5CF003E2602 /* Main.storyboard */; };
+		4DA9977623B6F5D1003E2602 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DA9977523B6F5D1003E2602 /* Assets.xcassets */; };
+		4DA9977923B6F5D1003E2602 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA9977723B6F5D1003E2602 /* LaunchScreen.storyboard */; };
+		4DCB534723BAD161008FE133 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCB534623BAD161008FE133 /* NotificationCenter.framework */; };
+		4DCB534A23BAD161008FE133 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCB534923BAD161008FE133 /* TodayViewController.swift */; };
+		4DCB534D23BAD161008FE133 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DCB534B23BAD161008FE133 /* MainInterface.storyboard */; };
+		4DCB535123BAD161008FE133 /* extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4DCB534423BAD161008FE133 /* extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4DCB535823BAD4B0008FE133 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCB533E23B97F2F008FE133 /* Main.swift */; };
+		4DCB535A23BAD4B0008FE133 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA9978623B8CB10003E2602 /* AppData.swift */; };
+		4DCB535B23BAD4B0008FE133 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA9978423B8BFD6003E2602 /* Requests.swift */; };
+		4DCB536F23BCEA3D008FE133 /* MobileBankID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCB536E23BCEA3D008FE133 /* MobileBankID.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4DCB534F23BAD161008FE133 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DA9976123B6F5CF003E2602 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DCB534323BAD161008FE133;
+			remoteInfo = extension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4DCB535523BAD161008FE133 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4DCB535123BAD161008FE133 /* extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4D62039523C2CE9500AC1384 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		4D62039723C3848B00AC1384 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
+		4D62039923C384BB00AC1384 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		4D62039B23C384E000AC1384 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		4D62039D23C3850600AC1384 /* UnAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnAuth.swift; sourceTree = "<group>"; };
+		4DA9976923B6F5CF003E2602 /* Snabbsaldo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snabbsaldo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DA9976C23B6F5CF003E2602 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4DA9976E23B6F5CF003E2602 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4DA9977023B6F5CF003E2602 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4DA9977323B6F5CF003E2602 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4DA9977523B6F5D1003E2602 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DA9977823B6F5D1003E2602 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4DA9977A23B6F5D1003E2602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DA9978423B8BFD6003E2602 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
+		4DA9978623B8CB10003E2602 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		4DCB533E23B97F2F008FE133 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		4DCB534423BAD161008FE133 /* extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DCB534623BAD161008FE133 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		4DCB534923BAD161008FE133 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		4DCB534C23BAD161008FE133 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		4DCB534E23BAD161008FE133 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DCB535623BAD20F008FE133 /* Swedbank Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Swedbank Widget.entitlements"; sourceTree = "<group>"; };
+		4DCB535723BAD33F008FE133 /* extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = extension.entitlements; sourceTree = "<group>"; };
+		4DCB536E23BCEA3D008FE133 /* MobileBankID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileBankID.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DA9976623B6F5CF003E2602 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DCB534123BAD161008FE133 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DCB534723BAD161008FE133 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DA9976023B6F5CF003E2602 = {
+			isa = PBXGroup;
+			children = (
+				4DA9976B23B6F5CF003E2602 /* Swedbank Widget */,
+				4DCB534823BAD161008FE133 /* extension */,
+				4DCB534523BAD161008FE133 /* Frameworks */,
+				4DA9976A23B6F5CF003E2602 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4DA9976A23B6F5CF003E2602 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DA9976923B6F5CF003E2602 /* Snabbsaldo.app */,
+				4DCB534423BAD161008FE133 /* extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DA9976B23B6F5CF003E2602 /* Swedbank Widget */ = {
+			isa = PBXGroup;
+			children = (
+				4D62039523C2CE9500AC1384 /* LICENSE.txt */,
+				4DCB535623BAD20F008FE133 /* Swedbank Widget.entitlements */,
+				4DA9976C23B6F5CF003E2602 /* AppDelegate.swift */,
+				4DA9976E23B6F5CF003E2602 /* SceneDelegate.swift */,
+				4DA9977023B6F5CF003E2602 /* ViewController.swift */,
+				4DA9977223B6F5CF003E2602 /* Main.storyboard */,
+				4DA9977523B6F5D1003E2602 /* Assets.xcassets */,
+				4DA9977723B6F5D1003E2602 /* LaunchScreen.storyboard */,
+				4DA9977A23B6F5D1003E2602 /* Info.plist */,
+				4D62039B23C384E000AC1384 /* AppData.swift */,
+				4D62039923C384BB00AC1384 /* Main.swift */,
+				4DCB536E23BCEA3D008FE133 /* MobileBankID.swift */,
+				4D62039723C3848B00AC1384 /* Requests.swift */,
+			);
+			path = "Swedbank Widget";
+			sourceTree = "<group>";
+		};
+		4DCB534523BAD161008FE133 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DCB534623BAD161008FE133 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4DCB534823BAD161008FE133 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				4DCB535723BAD33F008FE133 /* extension.entitlements */,
+				4DCB534923BAD161008FE133 /* TodayViewController.swift */,
+				4DCB534B23BAD161008FE133 /* MainInterface.storyboard */,
+				4DCB534E23BAD161008FE133 /* Info.plist */,
+				4DCB533E23B97F2F008FE133 /* Main.swift */,
+				4DA9978623B8CB10003E2602 /* AppData.swift */,
+				4D62039D23C3850600AC1384 /* UnAuth.swift */,
+				4DA9978423B8BFD6003E2602 /* Requests.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DA9976823B6F5CF003E2602 /* Swedbank Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DA9977D23B6F5D1003E2602 /* Build configuration list for PBXNativeTarget "Swedbank Widget" */;
+			buildPhases = (
+				4DA9976523B6F5CF003E2602 /* Sources */,
+				4DA9976623B6F5CF003E2602 /* Frameworks */,
+				4DA9976723B6F5CF003E2602 /* Resources */,
+				4DCB535523BAD161008FE133 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DCB535023BAD161008FE133 /* PBXTargetDependency */,
+			);
+			name = "Swedbank Widget";
+			productName = "Swedbank Widget";
+			productReference = 4DA9976923B6F5CF003E2602 /* Snabbsaldo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4DCB534323BAD161008FE133 /* extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DCB535223BAD161008FE133 /* Build configuration list for PBXNativeTarget "extension" */;
+			buildPhases = (
+				4DCB534023BAD161008FE133 /* Sources */,
+				4DCB534123BAD161008FE133 /* Frameworks */,
+				4DCB534223BAD161008FE133 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = extension;
+			productName = extension;
+			productReference = 4DCB534423BAD161008FE133 /* extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DA9976123B6F5CF003E2602 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Samuel Ivarsson";
+				TargetAttributes = {
+					4DA9976823B6F5CF003E2602 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					4DCB534323BAD161008FE133 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 4DA9976423B6F5CF003E2602 /* Build configuration list for PBXProject "Swedbank Widget" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DA9976023B6F5CF003E2602;
+			productRefGroup = 4DA9976A23B6F5CF003E2602 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DA9976823B6F5CF003E2602 /* Swedbank Widget */,
+				4DCB534323BAD161008FE133 /* extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DA9976723B6F5CF003E2602 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D62039623C2CE9500AC1384 /* LICENSE.txt in Resources */,
+				4DA9977923B6F5D1003E2602 /* LaunchScreen.storyboard in Resources */,
+				4DA9977623B6F5D1003E2602 /* Assets.xcassets in Resources */,
+				4DA9977423B6F5CF003E2602 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DCB534223BAD161008FE133 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DCB534D23BAD161008FE133 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DA9976523B6F5CF003E2602 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DA9977123B6F5CF003E2602 /* ViewController.swift in Sources */,
+				4DA9976D23B6F5CF003E2602 /* AppDelegate.swift in Sources */,
+				4DCB536F23BCEA3D008FE133 /* MobileBankID.swift in Sources */,
+				4DA9976F23B6F5CF003E2602 /* SceneDelegate.swift in Sources */,
+				4D62039823C3848B00AC1384 /* Requests.swift in Sources */,
+				4D62039A23C384BB00AC1384 /* Main.swift in Sources */,
+				4D62039C23C384E000AC1384 /* AppData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DCB534023BAD161008FE133 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DCB535823BAD4B0008FE133 /* Main.swift in Sources */,
+				4DCB534A23BAD161008FE133 /* TodayViewController.swift in Sources */,
+				4D62039E23C3850600AC1384 /* UnAuth.swift in Sources */,
+				4DCB535A23BAD4B0008FE133 /* AppData.swift in Sources */,
+				4DCB535B23BAD4B0008FE133 /* Requests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4DCB535023BAD161008FE133 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DCB534323BAD161008FE133 /* extension */;
+			targetProxy = 4DCB534F23BAD161008FE133 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4DA9977223B6F5CF003E2602 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DA9977323B6F5CF003E2602 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4DA9977723B6F5D1003E2602 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DA9977823B6F5D1003E2602 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4DCB534B23BAD161008FE133 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DCB534C23BAD161008FE133 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4DA9977B23B6F5D1003E2602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4DA9977C23B6F5D1003E2602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4DA9977E23B6F5D1003E2602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Swedbank Widget/Swedbank Widget.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NNPX5ZKT2A;
+				INFOPLIST_FILE = "Swedbank Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samuelivarsson.Swedbank-Widget";
+				PRODUCT_NAME = Snabbsaldo;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4DA9977F23B6F5D1003E2602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Swedbank Widget/Swedbank Widget.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NNPX5ZKT2A;
+				INFOPLIST_FILE = "Swedbank Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samuelivarsson.Swedbank-Widget";
+				PRODUCT_NAME = Snabbsaldo;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4DCB535323BAD161008FE133 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = extension/extension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NNPX5ZKT2A;
+				INFOPLIST_FILE = extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samuelivarsson.Swedbank-Widget.extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4DCB535423BAD161008FE133 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = extension/extension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NNPX5ZKT2A;
+				INFOPLIST_FILE = extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samuelivarsson.Swedbank-Widget.extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DA9976423B6F5CF003E2602 /* Build configuration list for PBXProject "Swedbank Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DA9977B23B6F5D1003E2602 /* Debug */,
+				4DA9977C23B6F5D1003E2602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DA9977D23B6F5D1003E2602 /* Build configuration list for PBXNativeTarget "Swedbank Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DA9977E23B6F5D1003E2602 /* Debug */,
+				4DA9977F23B6F5D1003E2602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DCB535223BAD161008FE133 /* Build configuration list for PBXNativeTarget "extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DCB535323BAD161008FE133 /* Debug */,
+				4DCB535423BAD161008FE133 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DA9976123B6F5CF003E2602 /* Project object */;
+}
