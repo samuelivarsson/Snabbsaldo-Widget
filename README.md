@@ -18,4 +18,4 @@ Tveka dock inte på att ge kritik och förslag på förbättringar! Appen är ba
 
 ## Kontakt
 
-Email: samuelvalfridivarsson(at)gmail(dot)com
+Email: samuelivarsson3(at)gmail(dot)com
