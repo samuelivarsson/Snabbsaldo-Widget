@@ -7,10 +7,7 @@ Appen är endast tillgänglig på iOS och finns att laddar ner som en IPA fil ge
 
 ## Screenshshots
 
-<img src="./screenshots/screenshot_1.png" alt="drawing" width="200"/>
-<img src="./screenshots/screenshot_2.png" alt="drawing" width="200"/>
-<img src="./screenshots/screenshot_3.png" alt="drawing" width="200"/>
-<img src="./screenshots/screenshot_4.png" alt="drawing" width="200"/>
+<img src="./screenshots/screenshot_1.png" alt="drawing" width="200"/> <img src="./screenshots/screenshot_2.png" alt="drawing" width="200"/> <img src="./screenshots/screenshot_3.png" alt="drawing" width="200"/> <img src="./screenshots/screenshot_4.png" alt="drawing" width="200"/>
 
 ## Disclaimer
 
