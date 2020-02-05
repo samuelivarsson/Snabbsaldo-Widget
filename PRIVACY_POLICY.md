@@ -26,4 +26,4 @@ I may update my Privacy Policy from time to time. Thus, you are advised to revie
 
 ## Contact Me
 
-If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at samuelvalfridivarsson@gmail.com.
+If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at samuelivarsson3@gmail.com.
