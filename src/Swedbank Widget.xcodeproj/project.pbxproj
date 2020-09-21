@@ -12,6 +12,11 @@
 		4D62039A23C384BB00AC1384 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D62039923C384BB00AC1384 /* Main.swift */; };
 		4D62039C23C384E000AC1384 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D62039B23C384E000AC1384 /* AppData.swift */; };
 		4D62039E23C3850600AC1384 /* UnAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D62039D23C3850600AC1384 /* UnAuth.swift */; };
+		4D629E89251845010028E74B /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D629E88251845010028E74B /* IntentHandler.swift */; };
+		4D629E8D251845010028E74B /* Shortcuts.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4D629E86251845010028E74B /* Shortcuts.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4D629E9A251845140028E74B /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4D629E99251845140028E74B /* Intents.intentdefinition */; };
+		4D629EA4251845710028E74B /* UpdateWidgetIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D629EA3251845710028E74B /* UpdateWidgetIntentHandler.swift */; };
+		4D629EA9251845A90028E74B /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4D629E99251845140028E74B /* Intents.intentdefinition */; };
 		4DA9976D23B6F5CF003E2602 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA9976C23B6F5CF003E2602 /* AppDelegate.swift */; };
 		4DA9976F23B6F5CF003E2602 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA9976E23B6F5CF003E2602 /* SceneDelegate.swift */; };
 		4DA9977123B6F5CF003E2602 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA9977023B6F5CF003E2602 /* ViewController.swift */; };
@@ -26,15 +31,40 @@
 		4DCB535A23BAD4B0008FE133 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA9978623B8CB10003E2602 /* AppData.swift */; };
 		4DCB535B23BAD4B0008FE133 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA9978423B8BFD6003E2602 /* Requests.swift */; };
 		4DCB536F23BCEA3D008FE133 /* MobileBankID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCB536E23BCEA3D008FE133 /* MobileBankID.swift */; };
+		4DF881772516E3D500FB4A47 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF881762516E3D500FB4A47 /* WidgetKit.framework */; };
+		4DF881792516E3D500FB4A47 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF881782516E3D500FB4A47 /* SwiftUI.framework */; };
+		4DF8817C2516E3D500FB4A47 /* My_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF8817B2516E3D500FB4A47 /* My_Widget.swift */; };
+		4DF8817E2516E3D800FB4A47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF8817D2516E3D800FB4A47 /* Assets.xcassets */; };
+		4DF881822516E3D800FB4A47 /* My-WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4DF881752516E3D500FB4A47 /* My-WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4DF881942516EB6500FB4A47 /* GetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF881932516EB6500FB4A47 /* GetData.swift */; };
+		4DF881A22517653900FB4A47 /* GetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF881932516EB6500FB4A47 /* GetData.swift */; };
+		4DF881A62517656900FB4A47 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCB533E23B97F2F008FE133 /* Main.swift */; };
+		4DF881AA2517656D00FB4A47 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA9978623B8CB10003E2602 /* AppData.swift */; };
+		4DF881AE2517657000FB4A47 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA9978423B8BFD6003E2602 /* Requests.swift */; };
+		4DF881B22517657300FB4A47 /* UnAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D62039D23C3850600AC1384 /* UnAuth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4D629E8B251845010028E74B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DA9976123B6F5CF003E2602 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D629E85251845010028E74B;
+			remoteInfo = Shortcuts;
+		};
 		4DCB534F23BAD161008FE133 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4DA9976123B6F5CF003E2602 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4DCB534323BAD161008FE133;
 			remoteInfo = extension;
+		};
+		4DF881802516E3D800FB4A47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DA9976123B6F5CF003E2602 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DF881742516E3D500FB4A47;
+			remoteInfo = "My-WidgetExtension";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -45,7 +75,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				4DF881822516E3D800FB4A47 /* My-WidgetExtension.appex in Embed App Extensions */,
 				4DCB535123BAD161008FE133 /* extension.appex in Embed App Extensions */,
+				4D629E8D251845010028E74B /* Shortcuts.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,6 +90,12 @@
 		4D62039923C384BB00AC1384 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		4D62039B23C384E000AC1384 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		4D62039D23C3850600AC1384 /* UnAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnAuth.swift; sourceTree = "<group>"; };
+		4D629E26251840450028E74B /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		4D629E86251845010028E74B /* Shortcuts.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Shortcuts.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D629E88251845010028E74B /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		4D629E8A251845010028E74B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D629E99251845140028E74B /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		4D629EA3251845710028E74B /* UpdateWidgetIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateWidgetIntentHandler.swift; sourceTree = "<group>"; };
 		4DA9976923B6F5CF003E2602 /* Snabbsaldo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snabbsaldo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DA9976C23B6F5CF003E2602 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DA9976E23B6F5CF003E2602 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,9 +115,24 @@
 		4DCB535623BAD20F008FE133 /* Swedbank Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Swedbank Widget.entitlements"; sourceTree = "<group>"; };
 		4DCB535723BAD33F008FE133 /* extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = extension.entitlements; sourceTree = "<group>"; };
 		4DCB536E23BCEA3D008FE133 /* MobileBankID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileBankID.swift; sourceTree = "<group>"; };
+		4DF881752516E3D500FB4A47 /* My-WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "My-WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DF881762516E3D500FB4A47 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		4DF881782516E3D500FB4A47 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		4DF8817B2516E3D500FB4A47 /* My_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_Widget.swift; sourceTree = "<group>"; };
+		4DF8817D2516E3D800FB4A47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DF8817F2516E3D800FB4A47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DF881932516EB6500FB4A47 /* GetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetData.swift; sourceTree = "<group>"; };
+		4DF881BC2517771700FB4A47 /* My-WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "My-WidgetExtension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4D629E83251845010028E74B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4DA9976623B6F5CF003E2602 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,14 +148,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4DF881722516E3D500FB4A47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF881792516E3D500FB4A47 /* SwiftUI.framework in Frameworks */,
+				4DF881772516E3D500FB4A47 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D629E87251845010028E74B /* Shortcuts */ = {
+			isa = PBXGroup;
+			children = (
+				4D629E88251845010028E74B /* IntentHandler.swift */,
+				4D629E8A251845010028E74B /* Info.plist */,
+				4D629E99251845140028E74B /* Intents.intentdefinition */,
+				4D629EA3251845710028E74B /* UpdateWidgetIntentHandler.swift */,
+			);
+			path = Shortcuts;
+			sourceTree = "<group>";
+		};
 		4DA9976023B6F5CF003E2602 = {
 			isa = PBXGroup;
 			children = (
+				4DF881BC2517771700FB4A47 /* My-WidgetExtension.entitlements */,
 				4DA9976B23B6F5CF003E2602 /* Swedbank Widget */,
 				4DCB534823BAD161008FE133 /* extension */,
+				4DF8817A2516E3D500FB4A47 /* My-Widget */,
+				4D629E87251845010028E74B /* Shortcuts */,
 				4DCB534523BAD161008FE133 /* Frameworks */,
 				4DA9976A23B6F5CF003E2602 /* Products */,
 			);
@@ -113,6 +189,8 @@
 			children = (
 				4DA9976923B6F5CF003E2602 /* Snabbsaldo.app */,
 				4DCB534423BAD161008FE133 /* extension.appex */,
+				4DF881752516E3D500FB4A47 /* My-WidgetExtension.appex */,
+				4D629E86251845010028E74B /* Shortcuts.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,6 +219,9 @@
 			isa = PBXGroup;
 			children = (
 				4DCB534623BAD161008FE133 /* NotificationCenter.framework */,
+				4DF881762516E3D500FB4A47 /* WidgetKit.framework */,
+				4DF881782516E3D500FB4A47 /* SwiftUI.framework */,
+				4D629E26251840450028E74B /* IntentsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -160,9 +241,37 @@
 			path = extension;
 			sourceTree = "<group>";
 		};
+		4DF8817A2516E3D500FB4A47 /* My-Widget */ = {
+			isa = PBXGroup;
+			children = (
+				4DF8817B2516E3D500FB4A47 /* My_Widget.swift */,
+				4DF8817D2516E3D800FB4A47 /* Assets.xcassets */,
+				4DF8817F2516E3D800FB4A47 /* Info.plist */,
+				4DF881932516EB6500FB4A47 /* GetData.swift */,
+			);
+			path = "My-Widget";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4D629E85251845010028E74B /* Shortcuts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D629E8E251845010028E74B /* Build configuration list for PBXNativeTarget "Shortcuts" */;
+			buildPhases = (
+				4D629E82251845010028E74B /* Sources */,
+				4D629E83251845010028E74B /* Frameworks */,
+				4D629E84251845010028E74B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shortcuts;
+			productName = Shortcuts;
+			productReference = 4D629E86251845010028E74B /* Shortcuts.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		4DA9976823B6F5CF003E2602 /* Swedbank Widget */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DA9977D23B6F5D1003E2602 /* Build configuration list for PBXNativeTarget "Swedbank Widget" */;
@@ -176,6 +285,8 @@
 			);
 			dependencies = (
 				4DCB535023BAD161008FE133 /* PBXTargetDependency */,
+				4DF881812516E3D800FB4A47 /* PBXTargetDependency */,
+				4D629E8C251845010028E74B /* PBXTargetDependency */,
 			);
 			name = "Swedbank Widget";
 			productName = "Swedbank Widget";
@@ -199,21 +310,44 @@
 			productReference = 4DCB534423BAD161008FE133 /* extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		4DF881742516E3D500FB4A47 /* My-WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DF881852516E3D800FB4A47 /* Build configuration list for PBXNativeTarget "My-WidgetExtension" */;
+			buildPhases = (
+				4DF881712516E3D500FB4A47 /* Sources */,
+				4DF881722516E3D500FB4A47 /* Frameworks */,
+				4DF881732516E3D500FB4A47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "My-WidgetExtension";
+			productName = "My-WidgetExtension";
+			productReference = 4DF881752516E3D500FB4A47 /* My-WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		4DA9976123B6F5CF003E2602 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Samuel Ivarsson";
 				TargetAttributes = {
+					4D629E85251845010028E74B = {
+						CreatedOnToolsVersion = 12.0;
+					};
 					4DA9976823B6F5CF003E2602 = {
 						CreatedOnToolsVersion = 11.3;
 					};
 					4DCB534323BAD161008FE133 = {
 						CreatedOnToolsVersion = 11.3;
+					};
+					4DF881742516E3D500FB4A47 = {
+						CreatedOnToolsVersion = 12.0;
 					};
 				};
 			};
@@ -232,11 +366,20 @@
 			targets = (
 				4DA9976823B6F5CF003E2602 /* Swedbank Widget */,
 				4DCB534323BAD161008FE133 /* extension */,
+				4DF881742516E3D500FB4A47 /* My-WidgetExtension */,
+				4D629E85251845010028E74B /* Shortcuts */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4D629E84251845010028E74B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4DA9976723B6F5CF003E2602 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,9 +399,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4DF881732516E3D500FB4A47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF8817E2516E3D800FB4A47 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4D629E82251845010028E74B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D629E9A251845140028E74B /* Intents.intentdefinition in Sources */,
+				4D629EA4251845710028E74B /* UpdateWidgetIntentHandler.swift in Sources */,
+				4D629E89251845010028E74B /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4DA9976523B6F5CF003E2602 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -269,6 +430,7 @@
 				4DA9976F23B6F5CF003E2602 /* SceneDelegate.swift in Sources */,
 				4D62039823C3848B00AC1384 /* Requests.swift in Sources */,
 				4D62039A23C384BB00AC1384 /* Main.swift in Sources */,
+				4D629EA9251845A90028E74B /* Intents.intentdefinition in Sources */,
 				4D62039C23C384E000AC1384 /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,16 +444,40 @@
 				4D62039E23C3850600AC1384 /* UnAuth.swift in Sources */,
 				4DCB535A23BAD4B0008FE133 /* AppData.swift in Sources */,
 				4DCB535B23BAD4B0008FE133 /* Requests.swift in Sources */,
+				4DF881A22517653900FB4A47 /* GetData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DF881712516E3D500FB4A47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF881B22517657300FB4A47 /* UnAuth.swift in Sources */,
+				4DF881A62517656900FB4A47 /* Main.swift in Sources */,
+				4DF881942516EB6500FB4A47 /* GetData.swift in Sources */,
+				4DF8817C2516E3D500FB4A47 /* My_Widget.swift in Sources */,
+				4DF881AE2517657000FB4A47 /* Requests.swift in Sources */,
+				4DF881AA2517656D00FB4A47 /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4D629E8C251845010028E74B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D629E85251845010028E74B /* Shortcuts */;
+			targetProxy = 4D629E8B251845010028E74B /* PBXContainerItemProxy */;
+		};
 		4DCB535023BAD161008FE133 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4DCB534323BAD161008FE133 /* extension */;
 			targetProxy = 4DCB534F23BAD161008FE133 /* PBXContainerItemProxy */;
+		};
+		4DF881812516E3D800FB4A47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DF881742516E3D500FB4A47 /* My-WidgetExtension */;
+			targetProxy = 4DF881802516E3D800FB4A47 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -323,6 +509,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4D629E8F251845010028E74B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NNPX5ZKT2A;
+				INFOPLIST_FILE = Shortcuts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samuelivarsson.Swedbank-Widget.Shortcuts";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4D629E90251845010028E74B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NNPX5ZKT2A;
+				INFOPLIST_FILE = Shortcuts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samuelivarsson.Swedbank-Widget.Shortcuts";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		4DA9977B23B6F5D1003E2602 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -349,6 +575,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -373,7 +600,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -409,6 +636,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -427,7 +655,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -525,9 +753,68 @@
 			};
 			name = Release;
 		};
+		4DF881832516E3D800FB4A47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = "My-WidgetExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NNPX5ZKT2A;
+				INFOPLIST_FILE = "My-Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samuelivarsson.Swedbank-Widget.My-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4DF881842516E3D800FB4A47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = "My-WidgetExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NNPX5ZKT2A;
+				INFOPLIST_FILE = "My-Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samuelivarsson.Swedbank-Widget.My-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4D629E8E251845010028E74B /* Build configuration list for PBXNativeTarget "Shortcuts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D629E8F251845010028E74B /* Debug */,
+				4D629E90251845010028E74B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4DA9976423B6F5CF003E2602 /* Build configuration list for PBXProject "Swedbank Widget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -551,6 +838,15 @@
 			buildConfigurations = (
 				4DCB535323BAD161008FE133 /* Debug */,
 				4DCB535423BAD161008FE133 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DF881852516E3D800FB4A47 /* Build configuration list for PBXNativeTarget "My-WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DF881832516E3D800FB4A47 /* Debug */,
+				4DF881842516E3D800FB4A47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

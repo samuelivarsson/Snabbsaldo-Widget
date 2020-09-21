@@ -66,7 +66,6 @@ public class MobileBankID {
     
     public func initAuth(completion: @escaping ([String: Any]?, HTTPURLResponse?) -> Void) {
         let body: [String: Any] = ["useEasyLogin": false, "generateEasyLoginId": false, "userId": self.username]
-        
         postRequest(apiRequest: "identification/bankid/mobile", body: body, completion: completion)
     }
     
@@ -210,7 +209,7 @@ public class MobileBankID {
     }
     
     public func setAuthorizationKey(key: String = "") {
-        self._authorization = (key.count < 1) ? genAuthorizationKey() : key
+        self._authorization = genAuthorizationKey()
     }
     
     public func genAuthorizationKey() -> String {
