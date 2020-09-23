@@ -53,18 +53,9 @@ public class GetData {
             boolean = false
         }
         
-        let userDefaults = UserDefaults.standard
-        var difference = 0.0
-        
-        if let lasteDate = userDefaults.object(forKey: "lastDate") as? Date {
-            difference = lasteDate.distance(to: Date())
-            boolean = !difference.isLess(than: 10)
-        } else {
-            boolean = true
-        }
-        
         if (boolean) {
             self.belopp = "Saldo laddas..."
+            self.waitText = ""
             let main = Main(bankApp: bankAPP, subscriptionId: subID)
             
             if subID == "ExampleXX2GCi3333YpupYBDZX75sOme8Ht9dtuFAKE=" {
@@ -72,7 +63,6 @@ public class GetData {
                 self.waitText = ""
 //                self.label.sizeToFit()
 //                self.refreshView.isHidden = true
-                userDefaults.set(Date(), forKey: "lastDate")
                 return
             }
             
@@ -83,15 +73,16 @@ public class GetData {
                                                                     responseString: "Couldn't request quickbalance",
                                                                     response: response, dictionary: dictionary)
                     if (!responseOK) {
+                        completion()
                         return
                     }
-                    
                     if let dictionary = dictionary {
                         let detail = ResponseStruct(dictionary: dictionary)
                         self.belopp = detail.balance + " " + detail.currency
 //                        self.label.sizeToFit()
 //                        self.refreshView.isHidden = true
                         self.waitText = ""
+                        self.dispBelopp = "Disponibelt belopp"
                         if (detail.numberOfReminders > 0) {
                             let end = (detail.numberOfReminders == 1) ? " påminnelse" : " påminnelser"
                             self.waitText = String(detail.numberOfReminders) + end
@@ -102,17 +93,7 @@ public class GetData {
                     completion()
                 }
             })
-            
-            userDefaults.set(Date(), forKey: "lastDate")
-            
         } else {
-            let waitTime: Int = 10 - Int(difference)
-            if self.belopp.contains("HTTP") || self.belopp.isEmpty {
-                self.belopp = "Saldo laddas..."
-            }
-            let sekunder = waitTime == 1 ? "sekund" : "sekunder"
-            self.waitText = "Det har inte gått 10 sekunder sedan du uppdatera senast.Vänta i \(waitTime) "
-                                + sekunder + ". " + "Försök sedan igen"
 //            self.refreshView.isHidden = false
             completion()
         }
@@ -142,18 +123,18 @@ public class GetData {
                                response: HTTPURLResponse?, dictionary: [String: Any]?) -> (Bool, HTTPURLResponse) {
         
         guard let response = response else {
-            DispatchQueue.main.async {
-                self.showError(string: "Unexpected error while sending " + errorString + " message", response: HTTPURLResponse())
-            }
+//            DispatchQueue.main.async {
+            self.showError(string: "Unexpected error while sending " + errorString + " message, maybe no internet connection?", response: HTTPURLResponse())
+//            }
             return (false, HTTPURLResponse())
         }
         
         let responseCode = response.statusCode
         if (responseCode < 200 || responseCode >= 300) {
             if let dictionary = dictionary {
-                DispatchQueue.main.async {
-                    self.showError(string: responseString, response: response, dictionary: dictionary)
-                }
+//                DispatchQueue.main.async {
+                self.showError(string: responseString, response: response, dictionary: dictionary)
+//                }
             }
             return (false, response)
         }

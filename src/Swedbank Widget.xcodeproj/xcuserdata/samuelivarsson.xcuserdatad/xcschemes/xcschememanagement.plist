@@ -7,27 +7,42 @@
 		<key>My-WidgetExtension.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
 		</dict>
 		<key>Shortcuts.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<key>Swedbank Widget.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<key>extension.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>4D629E85251845010028E74B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4DA9976823B6F5CF003E2602</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4DCB534323BAD161008FE133</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4DF881742516E3D500FB4A47</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -9,6 +9,8 @@
 import WidgetKit
 import SwiftUI
 
+var boolean: Bool = true
+
 struct Provider: TimelineProvider {
     
     let gd = GetData()
@@ -23,13 +25,53 @@ struct Provider: TimelineProvider {
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        self.gd.getBalance {
-            let currentDate = Date()
-            let refreshDate = Calendar.current.date(
-                byAdding: .minute,
-                value: 30,
-                to: currentDate
-            )!
+        let currentDate = Date()
+        let hour = Calendar.current.component(.hour, from: currentDate)
+        let userDefaults = UserDefaults.standard
+        var difference = 0.0
+        
+        if let lastDate = userDefaults.object(forKey: "lastDate") as? Date {
+            difference = lastDate.distance(to: currentDate)
+            boolean = !difference.isLess(than: 10)
+        } else {
+            boolean = true
+        }
+        
+        if (boolean) {
+            self.gd.getBalance {
+                print("?????????????????????????7")
+                print(gd.waitText)
+                let entry = SimpleEntry(
+                    date: currentDate,
+                    belopp: gd.belopp,
+                    info: gd.info,
+                    waitText: gd.waitText,
+                    dispBelopp: gd.dispBelopp
+                )
+                userDefaults.set(currentDate, forKey: "lastDate")
+                
+                var refreshDate = Calendar.current.date(
+                    byAdding: .minute,
+                    value: 30,
+                    to: currentDate
+                )!
+                if  hour > 22 {
+                    refreshDate = getTomorrowAt(hour: 9, minutes: 0)
+                } else if hour < 9 {
+                    refreshDate = getTodayAt(hour: 9, minutes: 0)
+                }
+                
+                let timeline = Timeline(entries: [entry], policy: .after(refreshDate))
+                completion(timeline)
+            }
+        } else {
+            let waitTime: Int = 10 - Int(difference)
+            if gd.belopp.contains("HTTP") || gd.belopp.isEmpty {
+                gd.belopp = "Saldo laddas..."
+            }
+            let sekunder = waitTime == 1 ? "sekund" : "sekunder"
+            gd.waitText = "Det har inte gått 10 sekunder sedan du uppdatera senast.Vänta i \(waitTime) "
+                                + sekunder + " och försök sedan igen."
             let entry = SimpleEntry(
                 date: currentDate,
                 belopp: gd.belopp,
@@ -37,6 +79,18 @@ struct Provider: TimelineProvider {
                 waitText: gd.waitText,
                 dispBelopp: gd.dispBelopp
             )
+            
+            var refreshDate = Calendar.current.date(
+                byAdding: .minute,
+                value: 30,
+                to: currentDate
+            )!
+            if  hour > 22 {
+                refreshDate = getTomorrowAt(hour: 9, minutes: 0)
+            } else if hour < 9 {
+                refreshDate = getTodayAt(hour: 9, minutes: 0)
+            }
+            
             let timeline = Timeline(entries: [entry], policy: .after(refreshDate))
             completion(timeline)
         }
@@ -77,10 +131,16 @@ struct My_WidgetEntryView : View {
                             .padding(.horizontal, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                     } else {
                         HStack(alignment: .center, spacing: 0, content: {
-                            Text("Last updated: ").font(.system(size: 9))
+                            Text("Senast uppdaterad: ").font(.system(size: 9))
                             Text(entry.date, style: .time).font(.system(size: 9))
                         })
                     }
+                })
+                
+                VStack(alignment: .center, spacing: nil, content: {
+                    Text("").frame(maxHeight: .infinity)
+                    Text("").frame(maxHeight: .infinity)
+                    Text(entry.info).frame(maxHeight: .infinity)
                 })
             })
         default:
@@ -96,10 +156,16 @@ struct My_WidgetEntryView : View {
                         Text(entry.waitText).font(.system(size: 9)).bold().multilineTextAlignment(.center)
                     } else {
                         HStack(alignment: .center, spacing: 0, content: {
-                            Text("Last updated: ").font(.system(size: 9))
+                            Text("Senast uppdaterad: ").font(.system(size: 9))
                             Text(entry.date, style: .time).font(.system(size: 9))
                         })
                     }
+                })
+                
+                VStack(alignment: .center, spacing: nil, content: {
+                    Text("").frame(maxHeight: .infinity)
+                    Text("").frame(maxHeight: .infinity)
+                    Text(entry.info).frame(maxHeight: .infinity)
                 })
             })
         }
@@ -151,4 +217,25 @@ struct My_Widget_Dark_Previews: PreviewProvider {
         .environment(\.colorScheme, .dark)
         .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
+}
+
+func getTomorrowAt(hour: Int, minutes: Int) -> Date {
+    let today = Date()
+    let morrow = Calendar.current.date(byAdding: .day,
+                                       value: 1,
+                                       to: today)
+    return Calendar.current.date(bySettingHour: hour,
+                                 minute: minutes,
+                                 second: 0,
+                                 of: morrow!)!
+
+}
+
+func getTodayAt(hour: Int, minutes: Int) -> Date {
+    let today = Date()
+    return Calendar.current.date(bySettingHour: hour,
+                                 minute: minutes,
+                                 second: 0,
+                                 of: today)!
+
 }
