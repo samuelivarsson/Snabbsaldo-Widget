@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WidgetKit
 
 class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
@@ -114,6 +115,11 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         }
     }
     
+    @IBAction func refreshWidgetsTapped(_ sender: Any) {
+        print("Refreshing Widgets")
+        WidgetCenter.shared.reloadAllTimelines()
+    }
+    
     @IBAction func beginButtonTapped(_ sender: Any) {
         self.showFirstScreen()
     }
@@ -173,6 +179,38 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         }
         
         self.userDefaultsGroup?.setValue(self.setViewTextField.text!, forKey: "SUBID")
+        self.userDefaultsGroup?.setValue(self.bankapp, forKey: "BANKAPP")
+        self.userDefaultsGroup?.setValue(self.bankappString, forKey: "BANKAPPSTRING")
+        self.showStartupScreen()
+    }
+    
+    @IBAction func setViewSetButton2Tapped(_ sender: Any) {
+        if self.setViewTextField.text!.count < 10 {
+            self.showUserError(stringTop: "Felaktig parameter", stringBottom: "Koden är för kort...")
+            return
+        }
+        if !bankappSetFromSetView {
+            self.showUserError(stringTop: "Felaktig parameter", stringBottom: "Ingen bank vald")
+            return
+        }
+        
+        self.userDefaultsGroup?.setValue(self.setViewTextField.text!, forKey: "SUBID2")
+        self.userDefaultsGroup?.setValue(self.bankapp, forKey: "BANKAPP")
+        self.userDefaultsGroup?.setValue(self.bankappString, forKey: "BANKAPPSTRING")
+        self.showStartupScreen()
+    }
+    
+    @IBAction func setViewSetButton3Tapped(_ sender: Any) {
+        if self.setViewTextField.text!.count < 10 {
+            self.showUserError(stringTop: "Felaktig parameter", stringBottom: "Koden är för kort...")
+            return
+        }
+        if !bankappSetFromSetView {
+            self.showUserError(stringTop: "Felaktig parameter", stringBottom: "Ingen bank vald")
+            return
+        }
+        
+        self.userDefaultsGroup?.setValue(self.setViewTextField.text!, forKey: "SUBID3")
         self.userDefaultsGroup?.setValue(self.bankapp, forKey: "BANKAPP")
         self.userDefaultsGroup?.setValue(self.bankappString, forKey: "BANKAPPSTRING")
         self.showStartupScreen()
@@ -324,10 +362,10 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
 
         self.username = self.view1TextField.text!
         
-        if (self.username.count < 10) {
-            self.showUserError(stringTop: "Felaktig parameter", stringBottom: "Personnumret måste vara minst 10 siffror")
-            return
-        }
+//        if (self.username.count < 10) {
+//            self.showUserError(stringTop: "Felaktig parameter", stringBottom: "Personnumret måste vara minst 10 siffror")
+//            return
+//        }
         if !bankappSetFromView1 {
             self.showUserError(stringTop: "Felaktig parameter", stringBottom: "Ingen bank vald")
             return
@@ -358,7 +396,12 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
                         } else {
                             print("\nStage 1 complete!\n")
                             self.showSecondScreen()
-                            self.openBankID()
+                            if let autoStartToken = dictionary["autoStartToken"] as? String {
+                                self.openBankID(autoStartToken: autoStartToken)
+                            } else {
+                                self.showError(string: "Couldn't extract status parameter from HTTP response",
+                                               response: response, dictionary: dictionary)
+                            }
                         }
                     } else {
                         self.showError(string: "Couldn't extract status parameter from HTTP response",
@@ -510,6 +553,61 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         
     }
     
+    @IBAction func applyButton2Tapped(_ sender: Any) {
+        self.userDefaultsGroup?.setValue(self.bankapp, forKey: "BANKAPP")
+        self.userDefaultsGroup?.setValue(self._subID, forKey: "SUBID2")
+        self.userDefaultsGroup?.setValue(self.bankappString, forKey: "BANKAPPSTRING")
+        
+        let stringTop = "Begäran lyckades"
+        let stringBottom = "Koden tillämpades"
+        
+        self.showStartupScreen()
+        
+        if self._subID != "ExampleXX2GCi3333YpupYBDZX75sOme8Ht9dtuFAKE=" {
+            main.terminate { dictionary, response in
+                let (responseOK, _) = self.responseCheck(errorString: "logout",
+                                                                responseString: "Couldn't logout, but the code was set",
+                                                                response: response, dictionary: dictionary)
+                
+                if (responseOK) {
+                    DispatchQueue.main.async {
+                        self.showUserError(stringTop: stringTop, stringBottom: stringBottom + " och du loggades ut")
+                    }
+                }
+            }
+        } else {
+            self.showUserError(stringTop: stringTop, stringBottom: stringBottom)
+        }
+        
+    }
+    
+    @IBAction func applyButton3Tapped(_ sender: Any) {
+        self.userDefaultsGroup?.setValue(self.bankapp, forKey: "BANKAPP")
+        self.userDefaultsGroup?.setValue(self._subID, forKey: "SUBID3")
+        self.userDefaultsGroup?.setValue(self.bankappString, forKey: "BANKAPPSTRING")
+        
+        let stringTop = "Begäran lyckades"
+        let stringBottom = "Koden tillämpades"
+        
+        self.showStartupScreen()
+        
+        if self._subID != "ExampleXX2GCi3333YpupYBDZX75sOme8Ht9dtuFAKE=" {
+            main.terminate { dictionary, response in
+                let (responseOK, _) = self.responseCheck(errorString: "logout",
+                                                                responseString: "Couldn't logout, but the code was set",
+                                                                response: response, dictionary: dictionary)
+                
+                if (responseOK) {
+                    DispatchQueue.main.async {
+                        self.showUserError(stringTop: stringTop, stringBottom: stringBottom + " och du loggades ut")
+                    }
+                }
+            }
+        } else {
+            self.showUserError(stringTop: stringTop, stringBottom: stringBottom)
+        }
+        
+    }
     
     func startCountdown(seconds: Int, completion: @escaping (Bool?) -> Void) {
         self.timerSeconds = seconds
@@ -599,9 +697,9 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         })
     }
     
-    private func openBankID() {
+    private func openBankID(autoStartToken: String) {
         
-        let url = URL(string: "https://app.bankid.com/?redirect=swedbankwidget://?sourceApplication=bankid")
+        let url = URL(string: "https://app.bankid.com/?autostarttoken=\(autoStartToken)&redirect=swedbankwidget://?sourceApplication=bankid")
         UIApplication.shared.open(url!, options: [.universalLinksOnly:true]) { (success) in
             // handle success/failure
             if (!success) {

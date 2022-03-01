@@ -10,10 +10,10 @@ import Foundation
 
 public class Requests {
 
-    private var _auth: MobileBankID
+    private var _auth: Auth
     private var _profileID: String
     
-    init(auth: MobileBankID) {
+    init(auth: Auth) {
         self._auth = auth
         self._profileID = ""
     }
@@ -32,5 +32,9 @@ public class Requests {
     
     public func setProfileID(profileID: String) {
         self._profileID = profileID
+    }
+    
+    public func quickBalance(subscriptionId: String, completion: @escaping ([String: Any]?, HTTPURLResponse?) -> Void) {
+        self._auth.getRequest(apiRequest: "quickbalance/" + subscriptionId, completion: completion)
     }
 }

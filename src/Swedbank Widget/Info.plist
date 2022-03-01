@@ -37,6 +37,7 @@
 	<true/>
 	<key>NSUserActivityTypes</key>
 	<array>
+		<string>ConfigurationIntent</string>
 		<string>UpdateWidgetIntent</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>

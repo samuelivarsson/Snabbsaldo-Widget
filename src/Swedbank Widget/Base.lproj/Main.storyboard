@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -39,9 +40,9 @@
                                         <rect key="frame" x="50" y="60" width="314" height="279"/>
                                         <subviews>
                                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NSZ-UB-DpD">
-                                                <rect key="frame" x="0.0" y="35.666666666666671" width="314" height="207.66666666666663"/>
+                                                <rect key="frame" x="0.0" y="36" width="314" height="207"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="fzf-X1-tcc">
-                                                    <rect key="frame" x="0.0" y="0.0" width="314" height="207.66666666666663"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="314" height="207"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7N-Wu-wRC" userLabel="setViewTextView">
@@ -85,7 +86,7 @@
                                                                     <constraint firstAttribute="height" constant="40" id="SbI-LZ-mBA"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <color key="tintColor" systemColor="placeholderTextColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="tintColor" systemColor="placeholderTextColor"/>
                                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                                 <inset key="imageEdgeInsets" minX="180" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                                 <state key="normal" title="Välj bank">
@@ -103,7 +104,7 @@
                                                                 </constraints>
                                                             </imageView>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstItem="SYJ-k1-eVw" firstAttribute="centerY" secondItem="zGI-O2-JRR" secondAttribute="centerY" id="6c9-UW-vux"/>
                                                             <constraint firstItem="tZe-jW-zYT" firstAttribute="leading" secondItem="zGI-O2-JRR" secondAttribute="leading" id="Kam-3I-2cr"/>
@@ -114,7 +115,7 @@
                                                             <constraint firstItem="tZe-jW-zYT" firstAttribute="top" secondItem="zGI-O2-JRR" secondAttribute="top" id="ziF-8B-L2d"/>
                                                         </constraints>
                                                     </view>
-                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6S-BF-swY">
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6S-BF-swY">
                                                         <rect key="frame" x="0.0" y="0.0" width="314" height="40"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -127,7 +128,7 @@
                                                             <action selector="bank2Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dGy-tn-tFT"/>
                                                         </connections>
                                                     </button>
-                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxN-oM-YrC">
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxN-oM-YrC">
                                                         <rect key="frame" x="0.0" y="0.0" width="314" height="40"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -140,7 +141,7 @@
                                                             <action selector="bank2Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2WB-Xr-kgi"/>
                                                         </connections>
                                                     </button>
-                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g18-hs-KNf">
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g18-hs-KNf">
                                                         <rect key="frame" x="0.0" y="0.0" width="314" height="40"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -154,7 +155,7 @@
                                                             <action selector="bankTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nJR-SX-icf"/>
                                                         </connections>
                                                     </button>
-                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vuq-kG-hcL">
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vuq-kG-hcL">
                                                         <rect key="frame" x="0.0" y="0.0" width="314" height="40"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -175,7 +176,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="nTU-fP-N5H"/>
                                                 </constraints>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" systemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -184,21 +185,44 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yvd-Z2-wre" userLabel="setButtonView">
                                         <rect key="frame" x="0.0" y="459" width="414" height="359"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTy-7O-fGH" userLabel="setViewSetButton">
-                                                <rect key="frame" x="168" y="162" width="78" height="35"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                                                <state key="normal" title="Tillämpa">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="setViewSetButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Vh-fB-tB5"/>
-                                                </connections>
-                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="r5b-st-f2K">
+                                                <rect key="frame" x="152" y="79" width="111.33333333333333" height="200"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTy-7O-fGH" userLabel="setViewSetButton">
+                                                        <rect key="frame" x="1.6666666666666643" y="0.0" width="108" height="66.666666666666671"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                        <state key="normal" title="Tillämpa primär">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="setViewSetButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Vh-fB-tB5"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="hCr-XE-esV" userLabel="setViewSetButton2">
+                                                        <rect key="frame" x="4.6666666666666643" y="66.666666666666657" width="102" height="66.666666666666657"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                        <state key="normal" title="Tillämpa andra">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="setViewSetButton2Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ti4-ME-8NQ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="IXD-Tm-ohX" userLabel="setViewSetButton3">
+                                                        <rect key="frame" x="3.6666666666666643" y="133.33333333333334" width="104" height="66.666666666666657"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                        <state key="normal" title="Tillämpa tredje">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="setViewSetButton3Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gny-Sa-R3H"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="WTy-7O-fGH" firstAttribute="centerX" secondItem="Yvd-Z2-wre" secondAttribute="centerX" id="K7R-Rf-aLg"/>
-                                            <constraint firstItem="WTy-7O-fGH" firstAttribute="centerY" secondItem="Yvd-Z2-wre" secondAttribute="centerY" id="gXt-ui-oSc"/>
-                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -222,10 +246,10 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k0O-6P-9aD" userLabel="titleView">
-                                        <rect key="frame" x="0.0" y="41" width="414" height="318"/>
+                                        <rect key="frame" x="0.0" y="41" width="414" height="348"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VP9-fI-EwY">
-                                                <rect key="frame" x="80.666666666666686" y="99.333333333333343" width="253" height="119.66666666666666"/>
+                                                <rect key="frame" x="80.666666666666686" y="114.33333333333334" width="253" height="119.66666666666666"/>
                                                 <string key="text">Snabbsaldo
 Widget</string>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="55"/>
@@ -239,7 +263,7 @@ Widget</string>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lGC-EL-6Gt">
-                                        <rect key="frame" x="50" y="359" width="314" height="100"/>
+                                        <rect key="frame" x="50" y="389" width="314" height="40"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3lO-PZ-m17">
                                                 <rect key="frame" x="0.0" y="0.0" width="314" height="40"/>
@@ -254,7 +278,7 @@ Widget</string>
                                                                     <constraint firstAttribute="height" constant="40" id="d43-wa-lVz"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <color key="tintColor" systemColor="placeholderTextColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="tintColor" systemColor="placeholderTextColor"/>
                                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                                 <inset key="imageEdgeInsets" minX="180" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                                 <state key="normal" title="Välj bank">
@@ -272,7 +296,7 @@ Widget</string>
                                                                 </constraints>
                                                             </imageView>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstItem="Xnl-hZ-peh" firstAttribute="leading" secondItem="1ZH-MO-Vuf" secondAttribute="leading" id="9BC-OA-6bj"/>
                                                             <constraint firstAttribute="trailing" secondItem="osP-Cl-swv" secondAttribute="trailing" constant="10" id="GNm-q1-uvJ"/>
@@ -283,7 +307,7 @@ Widget</string>
                                                             <constraint firstAttribute="trailing" secondItem="Xnl-hZ-peh" secondAttribute="trailing" id="tjn-ci-BfF"/>
                                                         </constraints>
                                                     </view>
-                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gY-Gt-rgY">
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gY-Gt-rgY">
                                                         <rect key="frame" x="0.0" y="0.0" width="314" height="40"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -296,7 +320,7 @@ Widget</string>
                                                             <action selector="bankTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KzJ-xm-cav"/>
                                                         </connections>
                                                     </button>
-                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6V-RK-4IZ">
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6V-RK-4IZ">
                                                         <rect key="frame" x="0.0" y="0.0" width="314" height="40"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -309,7 +333,7 @@ Widget</string>
                                                             <action selector="bankTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cYd-ie-Bxp"/>
                                                         </connections>
                                                     </button>
-                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mF-HR-aD9">
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mF-HR-aD9">
                                                         <rect key="frame" x="0.0" y="0.0" width="314" height="40"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -322,7 +346,7 @@ Widget</string>
                                                             <action selector="bankTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oZ7-1J-sg5"/>
                                                         </connections>
                                                     </button>
-                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AK1-MD-95P">
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AK1-MD-95P">
                                                         <rect key="frame" x="0.0" y="0.0" width="314" height="40"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -349,6 +373,11 @@ Widget</string>
                                                 <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done"/>
                                             </textField>
                                         </subviews>
+                                        <variation key="default">
+                                            <mask key="subviews">
+                                                <exclude reference="hIK-t0-aOH"/>
+                                            </mask>
+                                        </variation>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kip-Uu-0v8" userLabel="view1BackButton">
                                         <rect key="frame" x="20" y="19" width="100" height="22"/>
@@ -366,10 +395,10 @@ Widget</string>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xTS-Tw-itc" userLabel="loginButtonView">
-                                        <rect key="frame" x="0.0" y="459" width="414" height="359"/>
+                                        <rect key="frame" x="0.0" y="429" width="414" height="389"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3Z-KF-RHR" userLabel="loginButton">
-                                                <rect key="frame" x="170" y="159.66666666666663" width="74" height="40"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3Z-KF-RHR" userLabel="loginButton">
+                                                <rect key="frame" x="170" y="174.66666666666663" width="74" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="GHF-1D-Cdo"/>
                                                 </constraints>
@@ -441,7 +470,7 @@ Tryck sedan på knappen</string>
                                                 <rect key="frame" x="138.66666666666666" y="402.66666666666669" width="37" height="37"/>
                                                 <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </activityIndicatorView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KxL-yn-29b">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KxL-yn-29b">
                                                 <rect key="frame" x="101.66666666666666" y="644" width="111" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Dba-9F-5hm"/>
@@ -456,7 +485,7 @@ Tryck sedan på knappen</string>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbd-lp-l8R" userLabel="view2CancelButton">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbd-lp-l8R" userLabel="view2CancelButton">
                                         <rect key="frame" x="21" y="8" width="58" height="34"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <state key="normal" title="Avbryt">
@@ -482,7 +511,7 @@ Tryck sedan på knappen</string>
                                 <subviews>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JXH-EM-cGz">
                                         <rect key="frame" x="0.0" y="636" width="414" height="216"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <connections>
                                             <outlet property="dataSource" destination="BYZ-38-t0r" id="yCn-oO-nQf"/>
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="nNq-31-Fbd"/>
@@ -524,7 +553,7 @@ prenumerera på</string>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6YX-NC-BS8" userLabel="chooseButton">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6YX-NC-BS8" userLabel="chooseButton">
                                                 <rect key="frame" x="0.0" y="508" width="314" height="46"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <state key="normal" title="Välj">
@@ -536,7 +565,7 @@ prenumerera på</string>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7Q-a0-qZj" userLabel="view3CancelButton">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7Q-a0-qZj" userLabel="view3CancelButton">
                                         <rect key="frame" x="21" y="8" width="58" height="34"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <state key="normal" title="Avbryt">
@@ -566,16 +595,16 @@ prenumerera på</string>
                                         <rect key="frame" x="50" y="10" width="314" height="798"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="09z-3j-w8Y">
-                                                <rect key="frame" x="0.0" y="0.0" width="314" height="162"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="314" height="121.66666666666667"/>
                                                 <subviews>
                                                     <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2f2-ls-Yyb">
-                                                        <rect key="frame" x="0.0" y="0.0" width="314" height="162"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="314" height="121.66666666666667"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="PBB-Zd-S8v">
-                                                            <rect key="frame" x="0.0" y="0.0" width="314" height="162"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="314" height="122"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pH-lT-WzW" userLabel="view4SubLabel">
-                                                                    <rect key="frame" x="20" y="20" width="274" height="122"/>
+                                                                    <rect key="frame" x="20" y="20" width="274" height="81.666666666666671"/>
                                                                     <gestureRecognizers/>
                                                                     <string key="text">Ditt prenumerations-id är:
 
@@ -595,8 +624,8 @@ f6egQ3shVHg61HxsHRki0Duz5N-8jN3QrWXc4JvullM=</string>
                                                         <gestureRecognizers/>
                                                         <blurEffect style="regular"/>
                                                     </visualEffectView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zat-zS-9pV" userLabel="view4CopyButton">
-                                                        <rect key="frame" x="0.0" y="0.0" width="314" height="162"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zat-zS-9pV" userLabel="view4CopyButton">
+                                                        <rect key="frame" x="0.0" y="0.0" width="314" height="121.66666666666667"/>
                                                         <connections>
                                                             <action selector="copyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G1s-Yw-PyB"/>
                                                         </connections>
@@ -615,18 +644,15 @@ f6egQ3shVHg61HxsHRki0Duz5N-8jN3QrWXc4JvullM=</string>
                                                 </constraints>
                                             </view>
                                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SGY-xz-qbR">
-                                                <rect key="frame" x="0.0" y="341" width="314" height="232"/>
+                                                <rect key="frame" x="0.0" y="328" width="314" height="126"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8zF-Ij-DLY">
-                                                    <rect key="frame" x="0.0" y="0.0" width="314" height="232"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="314" height="126"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rad-A9-yl3" userLabel="view4InfoLabel">
-                                                            <rect key="frame" x="20" y="20" width="274" height="192"/>
-                                                            <string key="text">Spara denna kod på ett säkert ställe ifall den skulle mystiskt försvinna från appens minne. Oklart hur många koder man kan skaffa... Tryck på koden för att kopiera.
-
-Ta gärna en screenshot också!
-
-Tryck på tillämpa för att spara koden i appens minne.</string>
+                                                            <rect key="frame" x="20" y="20" width="274" height="86"/>
+                                                            <string key="text">Du kan spara denna kod och skriva in den manuellt ifall den skulle försvinna från appens minne. Tryck på koden för att kopiera den. 
+Tryck på tillämpa för att spara koden i appens minne. Detta kommer att aktivera widgeten.</string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -641,16 +667,43 @@ Tryck på tillämpa för att spara koden i appens minne.</string>
                                                 </view>
                                                 <blurEffect style="regular"/>
                                             </visualEffectView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PH7-QR-yOU" userLabel="applyButton">
-                                                <rect key="frame" x="0.0" y="752" width="314" height="46"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                                <state key="normal" title="Tillämpa">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="applyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wbK-53-3wH"/>
-                                                </connections>
-                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eXI-Ot-Kos">
+                                                <rect key="frame" x="0.0" y="660" width="314" height="138"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PH7-QR-yOU" userLabel="applyButton">
+                                                        <rect key="frame" x="0.0" y="0.0" width="314" height="46"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                        <state key="normal" title="Tillämpa primär">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="applyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wbK-53-3wH"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="LPE-kv-0rV" userLabel="applyButton2">
+                                                        <rect key="frame" x="0.0" y="46" width="314" height="46"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                        <state key="normal" title="Tillämpa andra">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="applyButton2Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iuq-jK-gO2"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="dLE-FC-Nr6" userLabel="applyButton3">
+                                                        <rect key="frame" x="0.0" y="92" width="314" height="46"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                        <state key="normal" title="Tillämpa tredje">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="applyButton3Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="odV-J8-EQu"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kopierat!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMe-RP-N3C" userLabel="view4CopyLabel">
@@ -658,7 +711,7 @@ Tryck på tillämpa för att spara koden i appens minne.</string>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
-                                        <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="shadowColor" systemColor="darkTextColor"/>
                                         <size key="shadowOffset" width="0.0" height="3"/>
                                     </label>
                                 </subviews>
@@ -729,27 +782,39 @@ Widget</string>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IrQ-mv-ThM">
                                                 <rect key="frame" x="0.0" y="448" width="414" height="448"/>
                                                 <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BO2-Wz-b8r" userLabel="refreshWidgetsButton">
+                                                        <rect key="frame" x="127.00000000000001" y="30" width="160.33333333333337" height="22"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="imageEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="Refresh Widgets" image="arrow.triangle.2.circlepath" catalog="system">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="refreshWidgetsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h61-iI-xX6"/>
+                                                        </connections>
+                                                    </button>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="aey-wF-ixa">
                                                         <rect key="frame" x="50" y="132" width="314" height="144"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tq7-Vf-cGa" userLabel="beginButton">
+                                                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tq7-Vf-cGa" userLabel="beginButton">
                                                                 <rect key="frame" x="0.0" y="0.0" width="314" height="22"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <inset key="imageEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                                <state key="normal" title="Logga in och skaffa ny kod" image="chevron.left" catalog="system">
+                                                                <state key="normal" title="Logga in och skaffa ny kod" image="chevron.right" catalog="system">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
                                                                     <action selector="beginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Ly-L9-E18"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sa2-E0-0hG" userLabel="setViewButton">
+                                                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sa2-E0-0hG" userLabel="setViewButton">
                                                                 <rect key="frame" x="0.0" y="122" width="314" height="22"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <inset key="imageEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                                <state key="normal" title="Ställ in en existerande kod" image="chevron.left" catalog="system">
+                                                                <state key="normal" title="Ställ in en existerande kod" image="chevron.right" catalog="system">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
@@ -762,7 +827,9 @@ Widget</string>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="aey-wF-ixa" secondAttribute="trailing" constant="50" id="6bq-e7-LvW"/>
                                                     <constraint firstItem="aey-wF-ixa" firstAttribute="leading" secondItem="IrQ-mv-ThM" secondAttribute="leading" constant="50" id="FAa-4H-ORE"/>
+                                                    <constraint firstItem="BO2-Wz-b8r" firstAttribute="centerX" secondItem="IrQ-mv-ThM" secondAttribute="centerX" id="Rho-4i-VC5"/>
                                                     <constraint firstItem="aey-wF-ixa" firstAttribute="centerY" secondItem="IrQ-mv-ThM" secondAttribute="centerY" constant="-20" id="VNJ-kk-Zfl"/>
+                                                    <constraint firstItem="BO2-Wz-b8r" firstAttribute="top" secondItem="IrQ-mv-ThM" secondAttribute="top" constant="30" id="afw-42-kZC"/>
                                                     <constraint firstItem="aey-wF-ixa" firstAttribute="centerX" secondItem="IrQ-mv-ThM" secondAttribute="centerX" id="jV0-mU-YXw"/>
                                                 </constraints>
                                             </view>
@@ -809,6 +876,7 @@ Widget</string>
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="c4Y-yI-W70" secondAttribute="bottom" id="2sL-Qb-Tgv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c4Y-yI-W70" secondAttribute="trailing" id="2uA-HH-d6B"/>
@@ -843,7 +911,6 @@ Widget</string>
                             <constraint firstItem="c4Y-yI-W70" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="yrn-Yg-Eij"/>
                             <constraint firstItem="vtk-6G-a0t" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zhY-oe-8VP"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="bankButton" destination="Xnl-hZ-peh" id="LJQ-zx-8XI"/>
@@ -885,8 +952,19 @@ Widget</string>
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.triangle.2.circlepath" catalog="system" width="128" height="101"/>
         <image name="background" width="2048" height="2732"/>
-        <image name="chevron.down" catalog="system" width="64" height="36"/>
-        <image name="chevron.left" catalog="system" width="48" height="64"/>
+        <image name="chevron.down" catalog="system" width="128" height="72"/>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="placeholderTextColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

@@ -42,10 +42,10 @@ extension RangeReplaceableCollection  {
     func choose(_ n: Int) -> SubSequence { return shuffled.prefix(n) }
 }
 
-public class MobileBankID {
+public class MobileBankID: Auth {
     
     private var _baseUri = "https://auth.api.swedbank.se/TDE_DAP_Portal_REST_WEB/api/"
-    private var _apiVersion = "v4"
+    private var _apiVersion = "v5"
     private var _appID: String
     private var _userAgent: String
     private var _authorization: String
@@ -65,8 +65,10 @@ public class MobileBankID {
     }
     
     public func initAuth(completion: @escaping ([String: Any]?, HTTPURLResponse?) -> Void) {
-        let body: [String: Any] = ["useEasyLogin": false, "generateEasyLoginId": false, "userId": self.username]
+        //let body: [String: Any] = ["useEasyLogin": false, "generateEasyLoginId": false, "userId": self.username, "bankIdOnSameDevice": true]
+        let body: [String: Any] = ["bankIdOnSameDevice": true]
         postRequest(apiRequest: "identification/bankid/mobile", body: body, completion: completion)
+        print(self.username)
     }
     
     public func verify(completion: @escaping ([String: Any]?, HTTPURLResponse?) -> Void) {
@@ -102,7 +104,7 @@ public class MobileBankID {
         sendRequest(request: request, completion: completion)
     }
     
-    private func createRequest(method: String, apiRequest: String, headers: [String: String] = [:], data: Data = Data()) -> URLRequest {
+    func createRequest(method: String, apiRequest: String, headers: [String: String] = [:], data: Data = Data()) -> URLRequest {
         
         let dsid = dsidGen()
         let dsidString = "dsid=\(dsid)"
@@ -120,8 +122,8 @@ public class MobileBankID {
         request.setValue("sv-se", forHTTPHeaderField: "Accept-Language")
         request.setValue("gzip, deflate", forHTTPHeaderField: "Accept-Encoding")
         request.setValue("keep-alive", forHTTPHeaderField: "Connection")
-        request.setValue("keep-alive", forHTTPHeaderField: "Proxy-Connection")
         request.setValue(self._userAgent, forHTTPHeaderField: "User-Agent")
+        request.setValue("isMobile:true", forHTTPHeaderField: "ADRUM_1")
         
         let cookieProps: [HTTPCookiePropertyKey : Any] = [
             HTTPCookiePropertyKey.domain: ".api.swedbank.se",
@@ -145,7 +147,7 @@ public class MobileBankID {
         return request
     }
     
-    private func sendRequest(request: URLRequest, completion: @escaping ([String: Any]?, HTTPURLResponse?) -> Void) {
+    func sendRequest(request: URLRequest, completion: @escaping ([String: Any]?, HTTPURLResponse?) -> Void) {
                 
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             
@@ -226,7 +228,7 @@ public class MobileBankID {
         return self._profileType
     }
     
-    private func dsidGen() -> String {
+    func dsidGen() -> String {
         var dsid = String(Int.random(in: 1...999999)).sha1()
         dsid = String(dsid.suffix(dsid.count-Int.random(in: 1...30)))
         dsid = String(dsid.prefix(8))

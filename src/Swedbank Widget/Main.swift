@@ -7,6 +7,25 @@
 //
 
 import Foundation
+import WidgetKit
+
+protocol Auth {
+    func initAuth(completion: @escaping ([String: Any]?, HTTPURLResponse?) -> Void)
+    func verify(completion: @escaping ([String: Any]?, HTTPURLResponse?) -> Void)
+    func terminate(completion: @escaping ([String: Any]?, HTTPURLResponse?) -> Void)
+    
+    func getRequest(apiRequest: String, completion: @escaping ([String: Any]?, HTTPURLResponse?) -> Void)
+    func postRequest(apiRequest: String, body: [String: Any], completion: @escaping ([String: Any]?, HTTPURLResponse?) -> Void)
+    func putRequest(apiRequest: String, completion: @escaping ([String: Any]?, HTTPURLResponse?) -> Void)
+    func createRequest(method: String, apiRequest: String, headers: [String: String], data: Data) -> URLRequest
+    func sendRequest(request: URLRequest, completion: @escaping ([String: Any]?, HTTPURLResponse?) -> Void)
+    
+    func setAppData(appdata: [String: String])
+    func setAuthorizationKey(key: String)
+    func genAuthorizationKey() -> String
+    func getProfileType() -> String
+    func dsidGen() -> String
+}
 
 public func createHTTPURLResponse(response: HTTPURLResponse, addValue: String, toKey: String) -> HTTPURLResponse {
     guard var headerFields = response.allHeaderFields as? [String: String] else {
@@ -31,13 +50,50 @@ public func createHTTPURLResponse(response: HTTPURLResponse, addValue: String, t
 }
 
 public var wasLaunchedByURL: Bool = false
+var cooldown: Bool = false
+let gd = GetData()
+
+func updateBalance(primary: Bool, completion: @escaping () -> Void) {
+    let userDefaults = UserDefaults(suiteName: "group.com.samuelivarsson.Swedbank-Widget")!
+    
+    var difference = 0.0
+    
+    if let lastDate = userDefaults.object(forKey: "lastGetBalanceDate") as? Date {
+        difference = lastDate.distance(to: Date())
+        cooldown = difference.isLess(than: 10)
+    } else {
+        cooldown = false
+    }
+    
+    if (!cooldown) {
+        gd.getBalance(primary: primary) {
+            let currentDate = Date()
+            userDefaults.set(currentDate, forKey: "lastGetBalanceDate")
+            completion()
+        }
+    } else {
+        let waitTime: Int = 10 - Int(difference)
+        if gd.belopp.isEmpty {//|| gd.belopp.contains("HTTP") {
+            gd.belopp = "Saldo laddas..."
+        }
+        let sekunder = waitTime == 1 ? "sekund" : "sekunder"
+        gd.waitText = "Det har inte gått 10 sekunder sedan du uppdatera senast. Vänta i \(waitTime) "
+                            + sekunder + " och försök sedan igen."
+        gd.setUserDefaults()
+        completion()
+    }
+}
 
 public class Main {
     
-    private var auth: MobileBankID
+    private var auth: Auth
+    private let bankApp: String
+    private let subscriptionId: String
     
-    init(bankApp: String, username: String) {
+    init(bankApp: String, username: String, subscriptionId: String = "") {
         self.auth = MobileBankID(bankApp: bankApp, username: username)
+        self.bankApp = bankApp
+        self.subscriptionId = subscriptionId
     }
 
     public func initAuth(completion: @escaping ([String: Any]?, HTTPURLResponse?) -> Void) {
@@ -166,6 +222,15 @@ public class Main {
     public func quickBalanceSubscription(quickbalanceSubscriptionID: String, completion: @escaping ([String: Any]?, HTTPURLResponse?) -> Void) {
         let bankConn = Requests(auth: self.auth)
         bankConn.quickBalanceSubscription(quickbalanceSubscriptionID: quickbalanceSubscriptionID, completion: completion)
+    }
+    
+    public func requestBalance(completion: @escaping ([String: Any]?, HTTPURLResponse?) -> Void) {
+
+        let auth1    = Autho(bankApp: self.bankApp)
+        let bankConn = Requests(auth: auth1)
+
+        bankConn.quickBalance(subscriptionId: self.subscriptionId, completion: completion)
+
     }
 
 }

@@ -12,7 +12,7 @@ class AppData {
     
     private static var appData: [String: [String: String]] = [
     "swedbank"           : ["appID": "R2S7gO3t2SgvJXUu", "useragent": "SamuelIvarssonWidgetApp"],
-    "sparbanken"         : ["appID": "pDmgd40ib5N4v3Ft", "useragent": "SamuelIvarssonWidgetApp"],
+    "sparbanken"         : ["appID": "Yqb2VsweiKH9c6nv", "useragent": "SamuelIvarssonWidgetApp"],
     "swedbank_ung"       : ["appID": "HnWVnvxpjYc2DM7g", "useragent": "SamuelIvarssonWidgetApp"],
     "sparbanken_ung"     : ["appID": "BXTU4hqHicC7j0Yq", "useragent": "SamuelIvarssonWidgetApp"],
     "swedbank_foretag"   : ["appID": "9H5GZZAW2DrlLIDH", "useragent": "SamuelIvarssonWidgetApp"],

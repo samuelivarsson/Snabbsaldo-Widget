@@ -45,7 +45,7 @@ extension RangeReplaceableCollection  {
 public class UnAuth {
     
     private var _baseUri = "https://auth.api.swedbank.se/TDE_DAP_Portal_REST_WEB/api/"
-    private var _apiVersion = "v4"
+    private var _apiVersion = "v5"
     private var _appID: String
     private var _userAgent: String
     private var _authorization: String
@@ -58,7 +58,7 @@ public class UnAuth {
         self._profileType = ""
         setAppData(appdata: AppData.bankAppId(bankApp: bankApp))
         setAuthorizationKey()
-        setBaseUri("https://unauth.api.swedbank.se/TDE_DAP_Portal_REST_WEB/api/")
+        setBaseUri("https://auth.api.swedbank.se/TDE_DAP_Portal_REST_WEB/api/")
     }
     
     public func setAppData(appdata: [String: String]) {

@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D041935252BAD9400D719B9 /* UpdateWidgetIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D629EA3251845710028E74B /* UpdateWidgetIntentHandler.swift */; };
+		4D04193A252BADA600D719B9 /* UpdateWidgetIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D629EA3251845710028E74B /* UpdateWidgetIntentHandler.swift */; };
+		4D041943252BADC000D719B9 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D629E88251845010028E74B /* IntentHandler.swift */; };
+		4D041948252BADC100D719B9 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D629E88251845010028E74B /* IntentHandler.swift */; };
+		4D041951252BADF100D719B9 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4D629E99251845140028E74B /* Intents.intentdefinition */; };
+		4D066F78252B2BC900149664 /* UnAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D066F77252B2BC900149664 /* UnAuth.swift */; };
+		4D066F7D252B317500149664 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D62039723C3848B00AC1384 /* Requests.swift */; };
+		4D066F7E252B317500149664 /* UnAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D066F77252B2BC900149664 /* UnAuth.swift */; };
+		4D066F7F252B317500149664 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D62039923C384BB00AC1384 /* Main.swift */; };
+		4D066F80252B317500149664 /* MobileBankID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCB536E23BCEA3D008FE133 /* MobileBankID.swift */; };
+		4D066F81252B317500149664 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D62039B23C384E000AC1384 /* AppData.swift */; };
+		4D066F87252B31E800149664 /* GetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D066F86252B31E800149664 /* GetData.swift */; };
+		4D066F8C252B31EF00149664 /* GetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D066F86252B31E800149664 /* GetData.swift */; };
+		4D066F9E252B417900149664 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D62039923C384BB00AC1384 /* Main.swift */; };
+		4D066FA7252B41AE00149664 /* MobileBankID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCB536E23BCEA3D008FE133 /* MobileBankID.swift */; };
+		4D066FA8252B41AE00149664 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D62039723C3848B00AC1384 /* Requests.swift */; };
+		4D066FA9252B41AE00149664 /* UnAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D066F77252B2BC900149664 /* UnAuth.swift */; };
+		4D066FAA252B41AE00149664 /* GetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D066F86252B31E800149664 /* GetData.swift */; };
+		4D066FAB252B41AE00149664 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D62039B23C384E000AC1384 /* AppData.swift */; };
+		4D0A15FF26DC77FF00EC5DAD /* MyEnum.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A15FE26DC77FF00EC5DAD /* MyEnum.intentdefinition */; };
+		4D0A160026DC79EE00EC5DAD /* MyEnum.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A15FE26DC77FF00EC5DAD /* MyEnum.intentdefinition */; };
 		4D62039623C2CE9500AC1384 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4D62039523C2CE9500AC1384 /* LICENSE.txt */; };
 		4D62039823C3848B00AC1384 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D62039723C3848B00AC1384 /* Requests.swift */; };
 		4D62039A23C384BB00AC1384 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D62039923C384BB00AC1384 /* Main.swift */; };
@@ -23,6 +44,9 @@
 		4DA9977423B6F5CF003E2602 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA9977223B6F5CF003E2602 /* Main.storyboard */; };
 		4DA9977623B6F5D1003E2602 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DA9977523B6F5D1003E2602 /* Assets.xcassets */; };
 		4DA9977923B6F5D1003E2602 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA9977723B6F5D1003E2602 /* LaunchScreen.storyboard */; };
+		4DB2A0FC26BF140C00462BC4 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB2A0FB26BF140C00462BC4 /* Auth.swift */; };
+		4DB2A10126BF141200462BC4 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB2A0FB26BF140C00462BC4 /* Auth.swift */; };
+		4DB2A10226BF141200462BC4 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB2A0FB26BF140C00462BC4 /* Auth.swift */; };
 		4DCB534723BAD161008FE133 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCB534623BAD161008FE133 /* NotificationCenter.framework */; };
 		4DCB534A23BAD161008FE133 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCB534923BAD161008FE133 /* TodayViewController.swift */; };
 		4DCB534D23BAD161008FE133 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DCB534B23BAD161008FE133 /* MainInterface.storyboard */; };
@@ -31,17 +55,11 @@
 		4DCB535A23BAD4B0008FE133 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA9978623B8CB10003E2602 /* AppData.swift */; };
 		4DCB535B23BAD4B0008FE133 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA9978423B8BFD6003E2602 /* Requests.swift */; };
 		4DCB536F23BCEA3D008FE133 /* MobileBankID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCB536E23BCEA3D008FE133 /* MobileBankID.swift */; };
+		4DE8A81B251EBDEE00BA9E12 /* My_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF8817B2516E3D500FB4A47 /* My_Widget.swift */; };
 		4DF881772516E3D500FB4A47 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF881762516E3D500FB4A47 /* WidgetKit.framework */; };
 		4DF881792516E3D500FB4A47 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF881782516E3D500FB4A47 /* SwiftUI.framework */; };
-		4DF8817C2516E3D500FB4A47 /* My_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF8817B2516E3D500FB4A47 /* My_Widget.swift */; };
 		4DF8817E2516E3D800FB4A47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF8817D2516E3D800FB4A47 /* Assets.xcassets */; };
 		4DF881822516E3D800FB4A47 /* My-WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4DF881752516E3D500FB4A47 /* My-WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		4DF881942516EB6500FB4A47 /* GetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF881932516EB6500FB4A47 /* GetData.swift */; };
-		4DF881A22517653900FB4A47 /* GetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF881932516EB6500FB4A47 /* GetData.swift */; };
-		4DF881A62517656900FB4A47 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCB533E23B97F2F008FE133 /* Main.swift */; };
-		4DF881AA2517656D00FB4A47 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA9978623B8CB10003E2602 /* AppData.swift */; };
-		4DF881AE2517657000FB4A47 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA9978423B8BFD6003E2602 /* Requests.swift */; };
-		4DF881B22517657300FB4A47 /* UnAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D62039D23C3850600AC1384 /* UnAuth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +103,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4D066F77252B2BC900149664 /* UnAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnAuth.swift; sourceTree = "<group>"; };
+		4D066F86252B31E800149664 /* GetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetData.swift; sourceTree = "<group>"; };
+		4D0A15FE26DC77FF00EC5DAD /* MyEnum.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = MyEnum.intentdefinition; sourceTree = "<group>"; };
 		4D62039523C2CE9500AC1384 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		4D62039723C3848B00AC1384 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
 		4D62039923C384BB00AC1384 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
@@ -106,6 +127,7 @@
 		4DA9977A23B6F5D1003E2602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DA9978423B8BFD6003E2602 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
 		4DA9978623B8CB10003E2602 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		4DB2A0FB26BF140C00462BC4 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		4DCB533E23B97F2F008FE133 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		4DCB534423BAD161008FE133 /* extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DCB534623BAD161008FE133 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
@@ -121,7 +143,6 @@
 		4DF8817B2516E3D500FB4A47 /* My_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_Widget.swift; sourceTree = "<group>"; };
 		4DF8817D2516E3D800FB4A47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DF8817F2516E3D800FB4A47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4DF881932516EB6500FB4A47 /* GetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetData.swift; sourceTree = "<group>"; };
 		4DF881BC2517771700FB4A47 /* My-WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "My-WidgetExtension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -211,6 +232,9 @@
 				4D62039923C384BB00AC1384 /* Main.swift */,
 				4DCB536E23BCEA3D008FE133 /* MobileBankID.swift */,
 				4D62039723C3848B00AC1384 /* Requests.swift */,
+				4D066F77252B2BC900149664 /* UnAuth.swift */,
+				4DB2A0FB26BF140C00462BC4 /* Auth.swift */,
+				4D066F86252B31E800149664 /* GetData.swift */,
 			);
 			path = "Swedbank Widget";
 			sourceTree = "<group>";
@@ -247,7 +271,7 @@
 				4DF8817B2516E3D500FB4A47 /* My_Widget.swift */,
 				4DF8817D2516E3D800FB4A47 /* Assets.xcassets */,
 				4DF8817F2516E3D800FB4A47 /* Info.plist */,
-				4DF881932516EB6500FB4A47 /* GetData.swift */,
+				4D0A15FE26DC77FF00EC5DAD /* MyEnum.intentdefinition */,
 			);
 			path = "My-Widget";
 			sourceTree = "<group>";
@@ -416,7 +440,14 @@
 			files = (
 				4D629E9A251845140028E74B /* Intents.intentdefinition in Sources */,
 				4D629EA4251845710028E74B /* UpdateWidgetIntentHandler.swift in Sources */,
+				4D066FAA252B41AE00149664 /* GetData.swift in Sources */,
+				4D066FA7252B41AE00149664 /* MobileBankID.swift in Sources */,
+				4D066FA8252B41AE00149664 /* Requests.swift in Sources */,
+				4DB2A10226BF141200462BC4 /* Auth.swift in Sources */,
+				4D066FA9252B41AE00149664 /* UnAuth.swift in Sources */,
+				4D066F9E252B417900149664 /* Main.swift in Sources */,
 				4D629E89251845010028E74B /* IntentHandler.swift in Sources */,
+				4D066FAB252B41AE00149664 /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,13 +455,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DB2A0FC26BF140C00462BC4 /* Auth.swift in Sources */,
 				4DA9977123B6F5CF003E2602 /* ViewController.swift in Sources */,
 				4DA9976D23B6F5CF003E2602 /* AppDelegate.swift in Sources */,
+				4D0A15FF26DC77FF00EC5DAD /* MyEnum.intentdefinition in Sources */,
+				4D041935252BAD9400D719B9 /* UpdateWidgetIntentHandler.swift in Sources */,
+				4D066F87252B31E800149664 /* GetData.swift in Sources */,
 				4DCB536F23BCEA3D008FE133 /* MobileBankID.swift in Sources */,
 				4DA9976F23B6F5CF003E2602 /* SceneDelegate.swift in Sources */,
 				4D62039823C3848B00AC1384 /* Requests.swift in Sources */,
 				4D62039A23C384BB00AC1384 /* Main.swift in Sources */,
+				4D066F78252B2BC900149664 /* UnAuth.swift in Sources */,
 				4D629EA9251845A90028E74B /* Intents.intentdefinition in Sources */,
+				4D041948252BADC100D719B9 /* IntentHandler.swift in Sources */,
 				4D62039C23C384E000AC1384 /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,7 +481,6 @@
 				4D62039E23C3850600AC1384 /* UnAuth.swift in Sources */,
 				4DCB535A23BAD4B0008FE133 /* AppData.swift in Sources */,
 				4DCB535B23BAD4B0008FE133 /* Requests.swift in Sources */,
-				4DF881A22517653900FB4A47 /* GetData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,12 +488,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DF881B22517657300FB4A47 /* UnAuth.swift in Sources */,
-				4DF881A62517656900FB4A47 /* Main.swift in Sources */,
-				4DF881942516EB6500FB4A47 /* GetData.swift in Sources */,
-				4DF8817C2516E3D500FB4A47 /* My_Widget.swift in Sources */,
-				4DF881AE2517657000FB4A47 /* Requests.swift in Sources */,
-				4DF881AA2517656D00FB4A47 /* AppData.swift in Sources */,
+				4D066F80252B317500149664 /* MobileBankID.swift in Sources */,
+				4D041943252BADC000D719B9 /* IntentHandler.swift in Sources */,
+				4D04193A252BADA600D719B9 /* UpdateWidgetIntentHandler.swift in Sources */,
+				4D066F7F252B317500149664 /* Main.swift in Sources */,
+				4D066F8C252B31EF00149664 /* GetData.swift in Sources */,
+				4D066F7E252B317500149664 /* UnAuth.swift in Sources */,
+				4DB2A10126BF141200462BC4 /* Auth.swift in Sources */,
+				4D0A160026DC79EE00EC5DAD /* MyEnum.intentdefinition in Sources */,
+				4D066F7D252B317500149664 /* Requests.swift in Sources */,
+				4DE8A81B251EBDEE00BA9E12 /* My_Widget.swift in Sources */,
+				4D041951252BADF100D719B9 /* Intents.intentdefinition in Sources */,
+				4D066F81252B317500149664 /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,6 +713,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Swedbank Widget/Swedbank Widget.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NNPX5ZKT2A;
@@ -682,6 +725,7 @@
 				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.samuelivarsson.Swedbank-Widget";
 				PRODUCT_NAME = Snabbsaldo;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -693,6 +737,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Swedbank Widget/Swedbank Widget.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NNPX5ZKT2A;
@@ -704,6 +749,7 @@
 				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.samuelivarsson.Swedbank-Widget";
 				PRODUCT_NAME = Snabbsaldo;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

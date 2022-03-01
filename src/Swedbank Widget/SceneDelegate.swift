@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WidgetKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -18,11 +19,44 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        checkOpenedFromURL(urlContexts: connectionOptions.urlContexts)
     }
     
     func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
-        print("heheh")
-        wasLaunchedByURL = true
+        checkOpenedFromURL(urlContexts: URLContexts)
+    }
+    
+    private func checkOpenedFromURL(urlContexts: Set<UIOpenURLContext>) {
+        guard let firstURLContext = urlContexts.first else {
+            return
+        }
+        let urlComponent = URLComponents(url: firstURLContext.url, resolvingAgainstBaseURL: false)!
+        if urlComponent.scheme == "com.samuelivarsson.Swedbank-Widget" {
+            WidgetCenter.shared.reloadAllTimelines()
+            UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
+//            UIApplication.shared.perform(#selector(NSXPCConnection.suspend))
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+//                exit(0)
+//            }
+            return
+        }
+        if let queryItems = urlComponent.queryItems {
+            for queryItem in queryItems {
+                if queryItem.name == "update" && queryItem.value == "true" {
+                    print("reloading...")
+                    WidgetCenter.shared.reloadAllTimelines()
+                    UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
+//                    UIApplication.shared.perform(#selector(NSXPCConnection.suspend))
+//                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+//                        exit(0)
+//                    }
+                }
+                if queryItem.name == "sourceApplication" && queryItem.value == "bankid" {
+                    print("was lauched by url...")
+                    wasLaunchedByURL = true
+                }
+            }
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

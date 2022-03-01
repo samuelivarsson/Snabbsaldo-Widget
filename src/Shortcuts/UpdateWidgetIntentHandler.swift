@@ -11,6 +11,8 @@ import Intents
 import WidgetKit
 
 class UpdateWidgetIntentHandler: NSObject, UpdateWidgetIntentHandling {
+    let userDefaults = UserDefaults(suiteName: "group.com.samuelivarsson.Swedbank-Widget")!
+    
     func handle(intent: UpdateWidgetIntent, completion: @escaping (UpdateWidgetIntentResponse) -> Void) {
         WidgetCenter.shared.reloadAllTimelines()
         completion(UpdateWidgetIntentResponse.success(result: "Update success!"))

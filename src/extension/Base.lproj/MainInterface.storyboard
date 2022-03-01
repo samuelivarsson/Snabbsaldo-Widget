@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saldo laddas..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIJ-aZ-8nj">
-                                <rect key="frame" x="77.333333333333329" y="4.3333333333333339" width="165.33333333333337" height="28.666666666666664"/>
+                                <rect key="frame" x="79.000000000000014" y="4.3333333333333339" width="162.33333333333337" height="28.666666666666664"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -76,9 +77,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSG-uS-Zda" userLabel="refreshButton">
                                                 <rect key="frame" x="24.333333333333343" y="7.6666666666666679" width="23.333333333333329" height="22"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
                                                 <inset key="imageEdgeInsets" minX="3" minY="3" maxX="3" maxY="5"/>
-                                                <state key="normal" image="arrow.2.circlepath" catalog="system"/>
+                                                <state key="normal" image="arrow.triangle.2.circlepath" catalog="system"/>
                                                 <connections>
                                                     <action selector="refreshButtonTapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="CpV-u5-tpi"/>
                                                 </connections>
@@ -92,6 +93,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
                         <constraints>
                             <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="qk2-qq-IB0" secondAttribute="trailing" id="4Fr-K2-bjv"/>
                             <constraint firstItem="qk2-qq-IB0" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" id="65l-Hv-FiT"/>
@@ -106,7 +108,6 @@
                             <constraint firstItem="UIJ-aZ-8nj" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="w0h-or-xxt"/>
                             <constraint firstAttribute="bottom" secondItem="qk2-qq-IB0" secondAttribute="bottom" id="wL1-nh-gWF"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -125,6 +126,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrow.2.circlepath" catalog="system" width="64" height="50"/>
+        <image name="arrow.triangle.2.circlepath" catalog="system" width="128" height="101"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
