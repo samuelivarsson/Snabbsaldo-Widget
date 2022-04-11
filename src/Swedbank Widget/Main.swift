@@ -57,8 +57,9 @@ func updateBalance(primary: Bool, completion: @escaping () -> Void) {
     let userDefaults = UserDefaults(suiteName: "group.com.samuelivarsson.Swedbank-Widget")!
     
     var difference = 0.0
+    let udkey = primary ? "lastGetBalanceDatePrimary" : "lastGetBalanceDateSecondary"
     
-    if let lastDate = userDefaults.object(forKey: "lastGetBalanceDate") as? Date {
+    if let lastDate = userDefaults.object(forKey: udkey) as? Date {
         difference = lastDate.distance(to: Date())
         cooldown = difference.isLess(than: 10)
     } else {
@@ -68,7 +69,7 @@ func updateBalance(primary: Bool, completion: @escaping () -> Void) {
     if (!cooldown) {
         gd.getBalance(primary: primary) {
             let currentDate = Date()
-            userDefaults.set(currentDate, forKey: "lastGetBalanceDate")
+            userDefaults.set(currentDate, forKey: udkey)
             completion()
         }
     } else {

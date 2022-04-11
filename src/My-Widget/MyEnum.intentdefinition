@@ -53,11 +53,11 @@
 	<key>INIntentDefinitionNamespace</key>
 	<string>zCafsS</string>
 	<key>INIntentDefinitionSystemVersion</key>
-	<string>20D74</string>
+	<string>21E230</string>
 	<key>INIntentDefinitionToolsBuildVersion</key>
-	<string>12E507</string>
+	<string>13E113</string>
 	<key>INIntentDefinitionToolsVersion</key>
-	<string>12.5.1</string>
+	<string>13.3</string>
 	<key>INIntents</key>
 	<array>
 		<dict>
@@ -73,73 +73,6 @@
 			<integer>2</integer>
 			<key>INIntentName</key>
 			<string>Configuration</string>
-			<key>INIntentParameters</key>
-			<array>
-				<dict>
-					<key>INIntentParameterConfigurable</key>
-					<true/>
-					<key>INIntentParameterCustomDisambiguation</key>
-					<true/>
-					<key>INIntentParameterDisplayName</key>
-					<string>Typ</string>
-					<key>INIntentParameterDisplayNameID</key>
-					<string>R73bqy</string>
-					<key>INIntentParameterDisplayPriority</key>
-					<integer>1</integer>
-					<key>INIntentParameterEnumType</key>
-					<string>MyEnum</string>
-					<key>INIntentParameterEnumTypeNamespace</key>
-					<string>zCafsS</string>
-					<key>INIntentParameterMetadata</key>
-					<dict>
-						<key>INIntentParameterMetadataDefaultValue</key>
-						<string>primary</string>
-					</dict>
-					<key>INIntentParameterName</key>
-					<string>Typ</string>
-					<key>INIntentParameterPromptDialogs</key>
-					<array>
-						<dict>
-							<key>INIntentParameterPromptDialogCustom</key>
-							<true/>
-							<key>INIntentParameterPromptDialogType</key>
-							<string>Configuration</string>
-						</dict>
-						<dict>
-							<key>INIntentParameterPromptDialogCustom</key>
-							<true/>
-							<key>INIntentParameterPromptDialogType</key>
-							<string>Primary</string>
-						</dict>
-						<dict>
-							<key>INIntentParameterPromptDialogCustom</key>
-							<true/>
-							<key>INIntentParameterPromptDialogFormatString</key>
-							<string>There are ${count} options matching ‘${Typ}’.</string>
-							<key>INIntentParameterPromptDialogFormatStringID</key>
-							<string>Mg7nTz</string>
-							<key>INIntentParameterPromptDialogType</key>
-							<string>DisambiguationIntroduction</string>
-						</dict>
-						<dict>
-							<key>INIntentParameterPromptDialogCustom</key>
-							<true/>
-							<key>INIntentParameterPromptDialogFormatString</key>
-							<string>Just to confirm, you wanted ‘${Typ}’?</string>
-							<key>INIntentParameterPromptDialogFormatStringID</key>
-							<string>biEzZa</string>
-							<key>INIntentParameterPromptDialogType</key>
-							<string>Confirmation</string>
-						</dict>
-					</array>
-					<key>INIntentParameterSupportsResolution</key>
-					<true/>
-					<key>INIntentParameterTag</key>
-					<integer>2</integer>
-					<key>INIntentParameterType</key>
-					<string>Integer</string>
-				</dict>
-			</array>
 			<key>INIntentResponse</key>
 			<dict>
 				<key>INIntentResponseCodes</key>

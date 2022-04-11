@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -40,7 +41,7 @@
                                         <rect key="frame" x="50" y="60" width="314" height="279"/>
                                         <subviews>
                                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NSZ-UB-DpD">
-                                                <rect key="frame" x="0.0" y="36" width="314" height="207"/>
+                                                <rect key="frame" x="0.0" y="35.666666666666671" width="314" height="207.66666666666663"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="fzf-X1-tcc">
                                                     <rect key="frame" x="0.0" y="0.0" width="314" height="207"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -361,23 +362,7 @@ Widget</string>
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Personnummer" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hIK-t0-aOH">
-                                                <rect key="frame" x="0.0" y="60" width="314" height="40"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="LlW-YQ-Zja"/>
-                                                </constraints>
-                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done"/>
-                                            </textField>
                                         </subviews>
-                                        <variation key="default">
-                                            <mask key="subviews">
-                                                <exclude reference="hIK-t0-aOH"/>
-                                            </mask>
-                                        </variation>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kip-Uu-0v8" userLabel="view1BackButton">
                                         <rect key="frame" x="20" y="19" width="100" height="22"/>
@@ -600,7 +585,7 @@ prenumerera på</string>
                                                     <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2f2-ls-Yyb">
                                                         <rect key="frame" x="0.0" y="0.0" width="314" height="121.66666666666667"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="PBB-Zd-S8v">
-                                                            <rect key="frame" x="0.0" y="0.0" width="314" height="122"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="314" height="121.66666666666667"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pH-lT-WzW" userLabel="view4SubLabel">
@@ -644,7 +629,7 @@ f6egQ3shVHg61HxsHRki0Duz5N-8jN3QrWXc4JvullM=</string>
                                                 </constraints>
                                             </view>
                                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SGY-xz-qbR">
-                                                <rect key="frame" x="0.0" y="328" width="314" height="126"/>
+                                                <rect key="frame" x="0.0" y="305" width="314" height="126"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8zF-Ij-DLY">
                                                     <rect key="frame" x="0.0" y="0.0" width="314" height="126"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -668,7 +653,7 @@ Tryck på tillämpa för att spara koden i appens minne. Detta kommer att aktive
                                                 <blurEffect style="regular"/>
                                             </visualEffectView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eXI-Ot-Kos">
-                                                <rect key="frame" x="0.0" y="660" width="314" height="138"/>
+                                                <rect key="frame" x="0.0" y="614" width="314" height="184"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PH7-QR-yOU" userLabel="applyButton">
                                                         <rect key="frame" x="0.0" y="0.0" width="314" height="46"/>
@@ -700,6 +685,17 @@ Tryck på tillämpa för att spara koden i appens minne. Detta kommer att aktive
                                                         </state>
                                                         <connections>
                                                             <action selector="applyButton3Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="odV-J8-EQu"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="aJS-rV-Pf8" userLabel="applyButton4">
+                                                        <rect key="frame" x="0.0" y="138" width="314" height="46"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                        <state key="normal" title="Tillämpa fjärde">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="applyButton4Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VtF-cV-cLR"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -927,7 +923,6 @@ Widget</string>
                         <outlet property="startUpIDLabel" destination="S8z-0y-KoJ" id="hy4-fo-71j"/>
                         <outlet property="startupView" destination="FeV-9e-ZfQ" id="P8u-O5-GjK"/>
                         <outlet property="view1" destination="vtk-6G-a0t" id="tEN-ai-e7B"/>
-                        <outlet property="view1TextField" destination="hIK-t0-aOH" id="utw-DM-HFs"/>
                         <outlet property="view2" destination="uXK-c9-pPc" id="HNT-Pg-MX5"/>
                         <outlet property="view2Label" destination="ODE-P0-2Kp" id="I5l-61-lBz"/>
                         <outlet property="view3" destination="c4Y-yI-W70" id="3pb-cd-p31"/>

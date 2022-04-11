@@ -14,9 +14,13 @@ public class GetData {
     var belopp: String = ""
     var belopp2: String = ""
     var belopp3: String = ""
+    var belopp4: String = ""
     var waitText: String = ""
     var dispBelopp: String = "Disponibelt belopp"
     var expirationMessage: String = ""
+    var name2: String = ""
+    var name3: String = ""
+    var name4: String = ""
     let userDefaultsGroup: UserDefaults? = UserDefaults.init(suiteName: "group.com.samuelivarsson.Swedbank-Widget")
     
     init() {
@@ -24,8 +28,12 @@ public class GetData {
         self.belopp = ""
         self.belopp2 = ""
         self.belopp3 = ""
+        self.belopp4 = ""
         self.waitText = ""
         self.dispBelopp = "Disponibelt belopp"
+        self.name2 = ""
+        self.name3 = ""
+        self.name4 = ""
     }
     
     public func getBalance(primary: Bool, completion: @escaping () -> Void) {
@@ -33,6 +41,7 @@ public class GetData {
         var bankAPP: String = ""
         var subID: String = ""
         var subID3: String = ""
+        var subID4: String = ""
         
         if let bankApp = self.userDefaultsGroup?.value(forKey: "BANKAPP") as? String {
             if bankApp.count < 8 {
@@ -103,6 +112,25 @@ public class GetData {
             }
             boolean = false
         }
+        if let subscriptionId4 = self.userDefaultsGroup?.value(forKey: "SUBID4") as? String {
+            if subscriptionId4.count < 10 {
+                if self.info != "" {
+                    self.info = self.info + " och din premunerationskod är för kort!"
+                } else {
+                    self.info = "Din premunerationskod är för kort!"
+                }
+                boolean = false
+            } else {
+                if !primary {subID4 = subscriptionId4}
+            }
+        } else {
+            if info != "" {
+                self.info = self.info + " eller din premunerationskod!"
+            } else {
+                self.info = "Du har inte ställt in din premunerationskod!"
+            }
+            boolean = false
+        }
         
         if (boolean) {
             self.belopp = "Saldo laddas..."
@@ -129,30 +157,47 @@ public class GetData {
                     if let dictionary = dictionary {
                         let detail = ResponseStruct(dictionary: dictionary)
                         self.belopp2 = detail.balance + " " + detail.currency
+                        self.name2 = detail.name
                     } else {
                         self.showError(string: "Unknown error occured (55)", response: response)
                     }
-                    self.setUserDefaults2()
-                    completion()
-                })
-                let main3 = Main(bankApp: bankAPP, username: "", subscriptionId: subID3)
-                main3.requestBalance (completion: { dictionary, response in
-                    let (responseOK, response) = self.responseCheck(errorString: "quickbalance",
-                                                                    responseString: "Couldn't request quickbalance",
-                                                                    response: response, dictionary: dictionary)
-                    if (!responseOK) {
-                        completion()
-                        self.setUserDefaults2()
-                        return
-                    }
-                    if let dictionary = dictionary {
-                        let detail = ResponseStruct(dictionary: dictionary)
-                        self.belopp3 = detail.balance + " " + detail.currency
-                    } else {
-                        self.showError(string: "Unknown error occured (55)", response: response)
-                    }
-                    self.setUserDefaults2()
-                    completion()
+                    
+                    let main3 = Main(bankApp: bankAPP, username: "", subscriptionId: subID3)
+                    main3.requestBalance (completion: { dictionary, response in
+                        let (responseOK, response) = self.responseCheck(errorString: "quickbalance",
+                                                                        responseString: "Couldn't request quickbalance",
+                                                                        response: response, dictionary: dictionary)
+                        if (!responseOK) {
+                            completion()
+                            self.setUserDefaults2()
+                            return
+                        }
+                        if let dictionary = dictionary {
+                            let detail = ResponseStruct(dictionary: dictionary)
+                            self.belopp3 = detail.balance + " " + detail.currency
+                        } else {
+                            self.showError(string: "Unknown error occured (55)", response: response)
+                        }
+                        let main4 = Main(bankApp: bankAPP, username: "", subscriptionId: subID4)
+                        main4.requestBalance (completion: { dictionary, response in
+                            let (responseOK, response) = self.responseCheck(errorString: "quickbalance",
+                                                                            responseString: "Couldn't request quickbalance",
+                                                                            response: response, dictionary: dictionary)
+                            if (!responseOK) {
+                                completion()
+                                self.setUserDefaults2()
+                                return
+                            }
+                            if let dictionary = dictionary {
+                                let detail = ResponseStruct(dictionary: dictionary)
+                                self.belopp4 = detail.balance + " " + detail.currency
+                            } else {
+                                self.showError(string: "Unknown error occured (55)", response: response)
+                            }
+                            self.setUserDefaults2()
+                            completion()
+                        })
+                    })
                 })
                 return
             }
@@ -199,6 +244,13 @@ public class GetData {
     func setUserDefaults2() {
         userDefaultsGroup!.set(self.belopp2, forKey: "GDBelopp2")
         userDefaultsGroup!.set(self.belopp3, forKey: "GDBelopp3")
+        userDefaultsGroup!.set(self.belopp4, forKey: "GDBelopp4")
+        userDefaultsGroup!.set(self.name2, forKey: "GDName2")
+        userDefaultsGroup!.set(self.name3, forKey: "GDName3")
+        userDefaultsGroup!.set(self.name4, forKey: "GDName4")
+        userDefaultsGroup!.set(self.waitText, forKey: "GDWaitText")
+        userDefaultsGroup!.set(self.info, forKey: "GDInfo")
+        userDefaultsGroup!.set(self.expirationMessage, forKey: "GDExpMessage")
     }
     
     struct ResponseStruct: Codable {
@@ -210,6 +262,7 @@ public class GetData {
         let balanceForCustomer: Bool
         let expirationDate: String
         let expirationMessage: String
+        let name: String
         
         init(dictionary: [String: Any]) {
             self.balance = dictionary["balance"] as? String ?? ""
@@ -220,6 +273,7 @@ public class GetData {
             self.balanceForCustomer = dictionary["balanceForCustomer"] as? Bool ?? false
             self.expirationDate = dictionary["expirationDate"] as? String ?? ""
             self.expirationMessage = dictionary["expirationMessage"] as? String ?? ""
+            self.name = dictionary["name"] as? String ?? ""
         }
     }
     

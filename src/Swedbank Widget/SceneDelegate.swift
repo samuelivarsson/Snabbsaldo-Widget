@@ -32,7 +32,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
         let urlComponent = URLComponents(url: firstURLContext.url, resolvingAgainstBaseURL: false)!
         if urlComponent.scheme == "com.samuelivarsson.Swedbank-Widget" {
-            WidgetCenter.shared.reloadAllTimelines()
+            let kind: String = urlComponent.host ?? ""
+            WidgetCenter.shared.reloadTimelines(ofKind: kind)
             UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
 //            UIApplication.shared.perform(#selector(NSXPCConnection.suspend))
 //            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {

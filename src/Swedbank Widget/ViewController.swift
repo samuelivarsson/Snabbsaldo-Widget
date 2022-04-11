@@ -14,8 +14,10 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     private var main: Main = Main(bankApp: "sparbanken", username: "0000000000")
     private var accounts: [[String: Any]] = [[:]]
     private var quickbalanceSubscriptionID: String = ""
+    private var quickbalanceSubscriptionName: String = ""
     private let userDefaultsGroup: UserDefaults? = UserDefaults.init(suiteName: "group.com.samuelivarsson.Swedbank-Widget")
     private var _subID: String = ""
+    private var _subName: String = ""
     private var bankapp: String = ""
     private var bankappSetFromView1: Bool = false
     private var bankappSetFromSetView: Bool = false
@@ -83,6 +85,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
                 if let name = accounts[row]["name"] as? String {
                     view3Label.text = "Valt konto: " + name
                     self.quickbalanceSubscriptionID = id
+                    self.quickbalanceSubscriptionName = name
                 }
             } else {
                 view3Label.text = "Error, something went wrong (1)"
@@ -117,7 +120,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     @IBAction func refreshWidgetsTapped(_ sender: Any) {
         print("Refreshing Widgets")
-        WidgetCenter.shared.reloadAllTimelines()
+        WidgetCenter.shared.reloadTimelines(ofKind: "prim")
     }
     
     @IBAction func beginButtonTapped(_ sender: Any) {
@@ -229,11 +232,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         toolbar.setItems([flexSpace, doneBtn], animated: false)
         toolbar.sizeToFit()
         
-        self.view1TextField.inputAccessoryView = toolbar
         self.setViewTextField.inputAccessoryView = toolbar
-
-        self.view1TextField.attributedPlaceholder = NSAttributedString(string: "Personnummer",
-                                                            attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
         self.setViewTextField.attributedPlaceholder = NSAttributedString(string: "Klistra in prenumerationskoden här...",
                                                             attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
     }
@@ -495,6 +494,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
                 if let subid = dictionary["subscriptionId"] as? String {
                     DispatchQueue.main.async {
                         self._subID = subid
+                        self._subName = self.quickbalanceSubscriptionName
                         self.view4SubLabel.text = "Din prenumerationskod är:\n\n" + self._subID
                         print("\nStage 4 complete!\n")
                         self.showFourthScreen()
@@ -556,6 +556,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBAction func applyButton2Tapped(_ sender: Any) {
         self.userDefaultsGroup?.setValue(self.bankapp, forKey: "BANKAPP")
         self.userDefaultsGroup?.setValue(self._subID, forKey: "SUBID2")
+        self.userDefaultsGroup?.setValue(self._subName, forKey: "SUBNAME2")
         self.userDefaultsGroup?.setValue(self.bankappString, forKey: "BANKAPPSTRING")
         
         let stringTop = "Begäran lyckades"
@@ -584,6 +585,36 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBAction func applyButton3Tapped(_ sender: Any) {
         self.userDefaultsGroup?.setValue(self.bankapp, forKey: "BANKAPP")
         self.userDefaultsGroup?.setValue(self._subID, forKey: "SUBID3")
+        self.userDefaultsGroup?.setValue(self._subName, forKey: "SUBNAME3")
+        self.userDefaultsGroup?.setValue(self.bankappString, forKey: "BANKAPPSTRING")
+        
+        let stringTop = "Begäran lyckades"
+        let stringBottom = "Koden tillämpades"
+        
+        self.showStartupScreen()
+        
+        if self._subID != "ExampleXX2GCi3333YpupYBDZX75sOme8Ht9dtuFAKE=" {
+            main.terminate { dictionary, response in
+                let (responseOK, _) = self.responseCheck(errorString: "logout",
+                                                                responseString: "Couldn't logout, but the code was set",
+                                                                response: response, dictionary: dictionary)
+                
+                if (responseOK) {
+                    DispatchQueue.main.async {
+                        self.showUserError(stringTop: stringTop, stringBottom: stringBottom + " och du loggades ut")
+                    }
+                }
+            }
+        } else {
+            self.showUserError(stringTop: stringTop, stringBottom: stringBottom)
+        }
+        
+    }
+    
+    @IBAction func applyButton4Tapped(_ sender: Any) {
+        self.userDefaultsGroup?.setValue(self.bankapp, forKey: "BANKAPP")
+        self.userDefaultsGroup?.setValue(self._subID, forKey: "SUBID4")
+        self.userDefaultsGroup?.setValue(self._subName, forKey: "SUBNAME4")
         self.userDefaultsGroup?.setValue(self.bankappString, forKey: "BANKAPPSTRING")
         
         let stringTop = "Begäran lyckades"
