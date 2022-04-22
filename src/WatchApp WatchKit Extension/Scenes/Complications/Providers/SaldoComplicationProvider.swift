@@ -12,6 +12,10 @@ import ClockKit
 
 final class SaldoComplicationProvider {
     func getSaldoComplication() -> CLKComplicationTemplate {
-        return CLKComplicationTemplateGraphicCornerCircularView(SaldoComplication())
+        let sc = SaldoComplication()
+        return CLKComplicationTemplateGraphicCornerStackText(
+            innerTextProvider: sc.saldo,
+            outerTextProvider: CLKSimpleTextProvider(text: "")
+        )
     }
 }

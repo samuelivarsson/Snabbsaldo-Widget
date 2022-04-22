@@ -11,26 +11,17 @@ import ClockKit
 
 let userDefaults: UserDefaults = UserDefaults(suiteName: "group.com.samuelivarsson.Swedbank-Widget")!
 
-struct SaldoComplication: View {
-    
-    let saldo: String = true ? "1237,39 SEK" : (userDefaults.string(forKey: "GDBelopp") ?? "")
-    var body: some View {
-        if saldo.isEmpty {
-            Image(systemName: "gamecontroller")
-        } else {
-            VStack {
-                Text(saldo).font(Font.system(size: 15))
-            }
-        }
-    }
+struct SaldoComplication {
+    let saldo: CLKSimpleTextProvider = CLKSimpleTextProvider(text: true ? "1237,39 SEK" : (userDefaults.string(forKey: "GDBelopp") ?? ""))
+    let lastUpdate: CLKSimpleTextProvider = CLKSimpleTextProvider(text: "Senast uppdaterad: 19:24")
 }
 
 struct SaldoComplication_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            SaldoComplication()
-            CLKComplicationTemplateGraphicCornerCircularView(
-                SaldoComplication()
+            CLKComplicationTemplateGraphicCornerStackText(
+                innerTextProvider: SaldoComplication().saldo,
+                outerTextProvider: CLKSimpleTextProvider(text: "")
             ).previewContext()
         }
     }
